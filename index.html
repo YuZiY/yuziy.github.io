@@ -6,7 +6,7 @@
     <meta content="smart-doc" name="generator">
     <title>API Reference</title>
     <link href="font.css" rel="stylesheet">
-    <link href="AllInOne.css?v=1685509959885" rel="stylesheet"/>
+    <link href="AllInOne.css?v=1686230060209" rel="stylesheet"/>
     <style>.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {
         background: #f7f7f8
     }
@@ -42,6 +42,10 @@
 
                     <li><a
                             href="#_1_1_5_修改">1.5.修改</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_1_6_登录">1.6.登录</a>
                     </li>
                 </ul>
             </li>
@@ -232,8 +236,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td class="tableblock halign-left valign-top"><p class="tableblock">v2023-05-31 13:12:39</p></td>
-                    <td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-31 13:12:39</p>
+                    <td class="tableblock halign-left valign-top"><p class="tableblock">v2023-06-08 21:14:20</p></td>
+                    <td class="tableblock halign-left valign-top"><p class="tableblock">2023-06-08 21:14:20</p>
                     </td>
                     <td class="tableblock halign-left valign-top"><p class="tableblock">auto</p></td>
                     <td class="tableblock halign-left valign-top"><p class="tableblock">@A</p></td>
@@ -286,10 +290,18 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">adminName</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            用户名（主键）</p></td>
+                            用户名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
 
@@ -331,11 +343,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "adminName": "joline.terry",
-    "pwd": "mqpsqq",
-    "aName": "joline.terry",
-    "email": "tabetha.heathcote@gmail.com",
-    "telephone": "857-248-9537"
+    "id": 147,
+    "adminName": "lily.ledner",
+    "pwd": "pwdzgw",
+    "aName": "lily.ledner",
+    "email": "damaris.jakubowski@gmail.com",
+    "telephone": "(650) 570-6707"
   }
 ]</code></pre>
                     </div>
@@ -379,7 +392,52 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            用户id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">adminName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">pwd</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            密码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">aName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            真实姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            电子邮箱</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">telephone</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            联系电话</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -388,7 +446,14 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/id --data '316'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/id --data '{
+  "id": 427,
+  "adminName": "lily.ledner",
+  "pwd": "qixwqt",
+  "aName": "lily.ledner",
+  "email": "damaris.jakubowski@gmail.com",
+  "telephone": "(650) 570-6707"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -409,10 +474,18 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">adminName</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            用户名（主键）</p></td>
+                            用户名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
 
@@ -453,11 +526,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "adminName": "joline.terry",
-  "pwd": "o1wn93",
-  "aName": "joline.terry",
-  "email": "tabetha.heathcote@gmail.com",
-  "telephone": "857-248-9537"
+  "id": 215,
+  "adminName": "lily.ledner",
+  "pwd": "kj4gta",
+  "aName": "lily.ledner",
+  "email": "damaris.jakubowski@gmail.com",
+  "telephone": "(650) 570-6707"
 }</code></pre>
                     </div>
                 </div>
@@ -500,7 +574,52 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            用户id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">adminName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">pwd</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            密码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">aName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            真实姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            电子邮箱</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">telephone</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            联系电话</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -509,13 +628,20 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/delete --data '835'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/delete --data '{
+  "id": 772,
+  "adminName": "lily.ledner",
+  "pwd": "0wyp9e",
+  "aName": "lily.ledner",
+  "email": "damaris.jakubowski@gmail.com",
+  "telephone": "(650) 570-6707"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">947</code></pre>
+                        <pre><code class="json">841</code></pre>
                     </div>
                 </div>
             </div>
@@ -554,10 +680,19 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">adminName</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            用户名（主键）</p></td>
+                            用户名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -603,18 +738,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/add --data '{
-  "adminName": "joline.terry",
-  "pwd": "264x3g",
-  "aName": "joline.terry",
-  "email": "tabetha.heathcote@gmail.com",
-  "telephone": "857-248-9537"
+  "id": 784,
+  "adminName": "lily.ledner",
+  "pwd": "gb5h1n",
+  "aName": "lily.ledner",
+  "email": "damaris.jakubowski@gmail.com",
+  "telephone": "(650) 570-6707"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">538</code></pre>
+                        <pre><code class="json">304</code></pre>
                     </div>
                 </div>
             </div>
@@ -653,10 +789,19 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">adminName</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            用户名（主键）</p></td>
+                            用户名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -702,18 +847,128 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/update --data '{
-  "adminName": "joline.terry",
-  "pwd": "f62o6o",
-  "aName": "joline.terry",
-  "email": "tabetha.heathcote@gmail.com",
-  "telephone": "857-248-9537"
+  "id": 283,
+  "adminName": "lily.ledner",
+  "pwd": "z76bry",
+  "aName": "lily.ledner",
+  "email": "damaris.jakubowski@gmail.com",
+  "telephone": "(650) 570-6707"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">102</code></pre>
+                        <pre><code class="json">159</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="05422a8f2235e2799680979a74605ecd"><h3 id="_1_1_6_登录"><a
+                    class="anchor" href="#_1_1_6_登录"></a><a class="link"
+                                                                                        href="#_1_1_6_登录">1.6.登录</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/admin/login"
+                     id="05422a8f2235e2799680979a74605ecd-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/admin/login">http://localhost:8080/admin/login</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="05422a8f2235e2799680979a74605ecd-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="05422a8f2235e2799680979a74605ecd-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>登录</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">adminName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            用户名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">pwd</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            密码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">aName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            真实姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            电子邮箱</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">telephone</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            联系电话</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/login --data '{
+  "id": 297,
+  "adminName": "lily.ledner",
+  "pwd": "xrluqt",
+  "aName": "lily.ledner",
+  "email": "damaris.jakubowski@gmail.com",
+  "telephone": "(650) 570-6707"
+}'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">970</code></pre>
                     </div>
                 </div>
             </div>
@@ -762,7 +1017,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">clNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             班级编号（主键）</p></td>
@@ -815,12 +1070,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "clNo": "9qlrle",
-    "clName": "joline.terry",
-    "faculty": "xyjucw",
-    "professional": "7b7yk3",
-    "number": 596,
-    "counselor": "1xjbpy"
+    "id": "180",
+    "clName": "lily.ledner",
+    "faculty": "h7aw00",
+    "professional": "0lf4ct",
+    "number": 776,
+    "counselor": "n7gpo8"
   }
 ]</code></pre>
                     </div>
@@ -862,9 +1117,54 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            班级编号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">clName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            班级名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">faculty</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            系别名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">professional</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            专业名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">number</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            班级人数</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">counselor</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            辅导员</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -873,7 +1173,14 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/id --data '370'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/id --data '{
+  "id": "180",
+  "clName": "lily.ledner",
+  "faculty": "6rhhj0",
+  "professional": "jy85os",
+  "number": 907,
+  "counselor": "x5zpb0"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -894,7 +1201,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">clNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             班级编号（主键）</p></td>
@@ -946,12 +1253,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "clNo": "kk5rr2",
-  "clName": "joline.terry",
-  "faculty": "bve96r",
-  "professional": "jbj90f",
-  "number": 836,
-  "counselor": "vm3vmt"
+  "id": "180",
+  "clName": "lily.ledner",
+  "faculty": "7h42ft",
+  "professional": "zbfpei",
+  "number": 286,
+  "counselor": "belefe"
 }</code></pre>
                     </div>
                 </div>
@@ -992,9 +1299,54 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            班级编号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">clName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            班级名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">faculty</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            系别名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">professional</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            专业名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">number</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            班级人数</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">counselor</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            辅导员</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -1003,13 +1355,20 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/delete --data '678'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/delete --data '{
+  "id": "180",
+  "clName": "lily.ledner",
+  "faculty": "gpw7uk",
+  "professional": "2f5d7p",
+  "number": 357,
+  "counselor": "8d9ixq"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">502</code></pre>
+                        <pre><code class="json">95</code></pre>
                     </div>
                 </div>
             </div>
@@ -1048,7 +1407,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">clNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             班级编号（主键）</p></td>
@@ -1106,19 +1465,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/add --data '{
-  "clNo": "y6iz5t",
-  "clName": "joline.terry",
-  "faculty": "25wig3",
-  "professional": "m3klu0",
-  "number": 497,
-  "counselor": "7jtv8a"
+  "id": "180",
+  "clName": "lily.ledner",
+  "faculty": "hx3t8h",
+  "professional": "wpn9rr",
+  "number": 894,
+  "counselor": "cs2sos"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">728</code></pre>
+                        <pre><code class="json">287</code></pre>
                     </div>
                 </div>
             </div>
@@ -1157,7 +1516,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">clNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             班级编号（主键）</p></td>
@@ -1215,19 +1574,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/update --data '{
-  "clNo": "kkrwcg",
-  "clName": "joline.terry",
-  "faculty": "xruabn",
-  "professional": "1at5ms",
-  "number": 377,
-  "counselor": "ip5ih2"
+  "id": "180",
+  "clName": "lily.ledner",
+  "faculty": "zyhw54",
+  "professional": "xd3ba3",
+  "number": 437,
+  "counselor": "2ack9j"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">83</code></pre>
+                        <pre><code class="json">848</code></pre>
                     </div>
                 </div>
             </div>
@@ -1276,7 +1635,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">cNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             课程编号（主键）</p></td>
@@ -1329,12 +1688,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "cNo": "6q41t7",
-    "cName": "joline.terry",
-    "type": "pd709w",
-    "unit": "wiz1c4",
-    "hours": "ee26q8",
-    "testmode": "lrdtgb"
+    "id": "180",
+    "cName": "lily.ledner",
+    "type": "ho53zc",
+    "unit": "3dr4b1",
+    "hours": "i05d1m",
+    "testmode": "10efoy"
   }
 ]</code></pre>
                     </div>
@@ -1376,9 +1735,54 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            课程编号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程类型</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">unit</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学分</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">hours</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学时</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">testmode</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考核方式</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -1387,7 +1791,14 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/id --data '339'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/id --data '{
+  "id": "180",
+  "cName": "lily.ledner",
+  "type": "oeufxm",
+  "unit": "nfb2z3",
+  "hours": "foirj1",
+  "testmode": "sz8mvg"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -1408,7 +1819,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">cNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             课程编号（主键）</p></td>
@@ -1460,12 +1871,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "cNo": "hy6s9a",
-  "cName": "joline.terry",
-  "type": "1p6f3x",
-  "unit": "7zgvpj",
-  "hours": "m1hkie",
-  "testmode": "33rjdm"
+  "id": "180",
+  "cName": "lily.ledner",
+  "type": "7hmlb1",
+  "unit": "y8y7yf",
+  "hours": "g7qcwr",
+  "testmode": "guxe29"
 }</code></pre>
                     </div>
                 </div>
@@ -1506,9 +1917,54 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            课程编号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程类型</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">unit</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学分</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">hours</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学时</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">testmode</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考核方式</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -1517,13 +1973,20 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/delete --data '750'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/delete --data '{
+  "id": "180",
+  "cName": "lily.ledner",
+  "type": "3noiag",
+  "unit": "32or07",
+  "hours": "0shk8k",
+  "testmode": "aottgv"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">310</code></pre>
+                        <pre><code class="json">526</code></pre>
                     </div>
                 </div>
             </div>
@@ -1562,7 +2025,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">cNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             课程编号（主键）</p></td>
@@ -1620,19 +2083,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/add --data '{
-  "cNo": "5ouqrh",
-  "cName": "joline.terry",
-  "type": "n7x8nh",
-  "unit": "1o3v9l",
-  "hours": "ib8bu2",
-  "testmode": "64cbfv"
+  "id": "180",
+  "cName": "lily.ledner",
+  "type": "mzh4gd",
+  "unit": "16ouqf",
+  "hours": "w5h0c3",
+  "testmode": "yhrrbc"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">760</code></pre>
+                        <pre><code class="json">26</code></pre>
                     </div>
                 </div>
             </div>
@@ -1671,7 +2134,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">cNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             课程编号（主键）</p></td>
@@ -1729,19 +2192,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/update --data '{
-  "cNo": "04gcrf",
-  "cName": "joline.terry",
-  "type": "c3fc4g",
-  "unit": "no0nr1",
-  "hours": "fl9go0",
-  "testmode": "u8siu4"
+  "id": "180",
+  "cName": "lily.ledner",
+  "type": "x1ya2g",
+  "unit": "e440hp",
+  "hours": "cpqscz",
+  "testmode": "0gdfrl"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">935</code></pre>
+                        <pre><code class="json">621</code></pre>
                     </div>
                 </div>
             </div>
@@ -1790,7 +2253,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">eId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             选修序号（主键）</p></td>
@@ -1883,17 +2346,17 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "eId": 233,
-    "sNo": "4mvfs0",
-    "tId": 86,
-    "round": "66j1ak",
-    "tEsttime": "2023-05-31 13:12:41",
-    "tEstsite": "zrbsso",
-    "sEat": "31r19t",
-    "uScore": 508,
-    "eScore": 495,
-    "tScore": 142,
-    "eRemarks": "4pk4no"
+    "id": 883,
+    "sNo": "vr5jcu",
+    "tId": 259,
+    "round": "dl19s6",
+    "tEsttime": "2023-06-08 21:14:21",
+    "tEstsite": "lzh1v1",
+    "sEat": "dsz1r5",
+    "uScore": 646,
+    "eScore": 774,
+    "tScore": 705,
+    "eRemarks": "0d4pip"
   }
 ]</code></pre>
                     </div>
@@ -1937,7 +2400,97 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            选修序号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">round</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试轮次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEsttime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEstsite</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试地点</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sEat</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            座位号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">uScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            平时成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            综合成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -1946,7 +2499,19 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/id --data '67'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/id --data '{
+  "id": 543,
+  "sNo": "vi5ekw",
+  "tId": 146,
+  "round": "5svtb1",
+  "tEsttime": "2023-06-08 21:14:21",
+  "tEstsite": "gs7ik2",
+  "sEat": "03ofih",
+  "uScore": 295,
+  "eScore": 880,
+  "tScore": 219,
+  "eRemarks": "3rq8ke"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -1967,7 +2532,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">eId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             选修序号（主键）</p></td>
@@ -2059,17 +2624,17 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "eId": 922,
-  "sNo": "cegbai",
-  "tId": 153,
-  "round": "1y68u0",
-  "tEsttime": "2023-05-31 13:12:41",
-  "tEstsite": "gdsori",
-  "sEat": "qu6ccf",
-  "uScore": 143,
-  "eScore": 490,
-  "tScore": 156,
-  "eRemarks": "zrbbc1"
+  "id": 711,
+  "sNo": "t2zamd",
+  "tId": 412,
+  "round": "o1hp1t",
+  "tEsttime": "2023-06-08 21:14:21",
+  "tEstsite": "wtlc0o",
+  "sEat": "tmeir7",
+  "uScore": 426,
+  "eScore": 967,
+  "tScore": 623,
+  "eRemarks": "eh9x23"
 }</code></pre>
                     </div>
                 </div>
@@ -2112,7 +2677,97 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            选修序号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">round</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试轮次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEsttime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEstsite</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试地点</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sEat</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            座位号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">uScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            平时成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            综合成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -2121,13 +2776,25 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/delete --data '952'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/delete --data '{
+  "id": 76,
+  "sNo": "s43rm7",
+  "tId": 753,
+  "round": "a0wgmq",
+  "tEsttime": "2023-06-08 21:14:21",
+  "tEstsite": "y4jvte",
+  "sEat": "xil00y",
+  "uScore": 162,
+  "eScore": 380,
+  "tScore": 698,
+  "eRemarks": "9ktm1t"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">500</code></pre>
+                        <pre><code class="json">736</code></pre>
                     </div>
                 </div>
             </div>
@@ -2166,7 +2833,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">eId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             选修序号（主键）</p></td>
@@ -2269,24 +2936,24 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/add --data '{
-  "eId": 581,
-  "sNo": "c0tfal",
-  "tId": 95,
-  "round": "v0wynj",
-  "tEsttime": "2023-05-31 13:12:41",
-  "tEstsite": "wp01e3",
-  "sEat": "xzg8hj",
-  "uScore": 291,
-  "eScore": 395,
-  "tScore": 173,
-  "eRemarks": "bxvoi2"
+  "id": 133,
+  "sNo": "z077vb",
+  "tId": 199,
+  "round": "oiwgcy",
+  "tEsttime": "2023-06-08 21:14:21",
+  "tEstsite": "x9zezd",
+  "sEat": "2vtxiz",
+  "uScore": 366,
+  "eScore": 261,
+  "tScore": 401,
+  "eRemarks": "ajaq92"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">183</code></pre>
+                        <pre><code class="json">59</code></pre>
                     </div>
                 </div>
             </div>
@@ -2325,7 +2992,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">eId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             选修序号（主键）</p></td>
@@ -2428,24 +3095,24 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/update --data '{
-  "eId": 140,
-  "sNo": "co8q3y",
-  "tId": 262,
-  "round": "ea5xk1",
-  "tEsttime": "2023-05-31 13:12:41",
-  "tEstsite": "jr4p56",
-  "sEat": "4yv3pf",
-  "uScore": 267,
-  "eScore": 64,
-  "tScore": 450,
-  "eRemarks": "braywj"
+  "id": 504,
+  "sNo": "c9h8cx",
+  "tId": 673,
+  "round": "vdjchg",
+  "tEsttime": "2023-06-08 21:14:21",
+  "tEstsite": "ekdh8g",
+  "sEat": "uh72w1",
+  "uScore": 455,
+  "eScore": 204,
+  "tScore": 796,
+  "eRemarks": "4vj3ld"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">744</code></pre>
+                        <pre><code class="json">14</code></pre>
                     </div>
                 </div>
             </div>
@@ -2494,7 +3161,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             学生学号（主键）</p></td>
@@ -2659,26 +3326,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "sNo": "kzzv4y",
-    "sPwd": "lf5eg4",
-    "clNo": "xaa3ip",
-    "sName": "joline.terry",
-    "sSex": "b1xpqb",
-    "cards": "4c93oz",
-    "birthday": "2023-05-31",
-    "nation": "jf7muh",
-    "birthplace": "56wxgf",
-    "political": "w22jmp",
-    "address": "Suite 229 8017 Brunilda Port， South Kathieside， IA 42726",
-    "code": "39616",
-    "sTelephone": "857-248-9537",
-    "sYear": "adv5sb",
-    "dormitory": "akfi1z",
-    "city": "xrsnyg",
-    "company": "Mills, Pouros and Hahn",
-    "pay": 88.01,
-    "graduate": "l500d4",
-    "sRemarks": "t9n4g5"
+    "id": "180",
+    "sPwd": "mitpy9",
+    "clNo": "rik5we",
+    "sName": "lily.ledner",
+    "sSex": "5tigvl",
+    "cards": "bvm63d",
+    "birthday": "2023-06-08",
+    "nation": "4x9v60",
+    "birthplace": "zbf5x3",
+    "political": "4s8uyk",
+    "address": "Apt. 476 21840 Conrad Mountain， Kilbackstad， MA 25627",
+    "code": "39609",
+    "sTelephone": "(650) 570-6707",
+    "sYear": "rhj1js",
+    "dormitory": "c9pf10",
+    "city": "9bv7ru",
+    "company": "Weissnat-Reichert",
+    "pay": 96.29,
+    "graduate": "ps2e7x",
+    "sRemarks": "kznor5"
   }
 ]</code></pre>
                     </div>
@@ -2720,9 +3387,180 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            学生学号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sPwd</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生密码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">clNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            班级编号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sSex</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            性别</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cards</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            居民身份证</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">birthday</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            出生日期</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">nation</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            民族</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">birthplace</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            籍贯</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">political</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            政治面貌</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">address</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            家庭地址</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">code</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            邮政编码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sTelephone</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            固定电话</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sYear</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            入学年份</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">dormitory</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            宿舍号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">city</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            工作城市</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">company</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            公司名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">pay</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">float</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            工资</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">graduate</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            是否毕业生</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -2731,7 +3569,28 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/id --data '323'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/id --data '{
+  "id": "180",
+  "sPwd": "f23scv",
+  "clNo": "ns0r94",
+  "sName": "lily.ledner",
+  "sSex": "h9a5t0",
+  "cards": "pr3hus",
+  "birthday": "2023-06-08",
+  "nation": "p2uijf",
+  "birthplace": "vothqh",
+  "political": "2jebhj",
+  "address": "Apt. 476 21840 Conrad Mountain， Kilbackstad， MA 25627",
+  "code": "39609",
+  "sTelephone": "(650) 570-6707",
+  "sYear": "40xgen",
+  "dormitory": "5i6mto",
+  "city": "okpi0y",
+  "company": "Weissnat-Reichert",
+  "pay": 19.07,
+  "graduate": "lyxero",
+  "sRemarks": "d689p0"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -2752,7 +3611,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             学生学号（主键）</p></td>
@@ -2916,26 +3775,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "sNo": "84rhpw",
-  "sPwd": "ra452p",
-  "clNo": "zmysap",
-  "sName": "joline.terry",
-  "sSex": "bmtyoe",
-  "cards": "3egs1d",
-  "birthday": "2023-05-31",
-  "nation": "5igqxx",
-  "birthplace": "8qnemk",
-  "political": "ycg8lw",
-  "address": "Suite 229 8017 Brunilda Port， South Kathieside， IA 42726",
-  "code": "39616",
-  "sTelephone": "857-248-9537",
-  "sYear": "wf1g4f",
-  "dormitory": "fqm9t4",
-  "city": "ljmye5",
-  "company": "Mills, Pouros and Hahn",
-  "pay": 41.22,
-  "graduate": "krq23g",
-  "sRemarks": "tewzjg"
+  "id": "180",
+  "sPwd": "y6ek9z",
+  "clNo": "d34h2c",
+  "sName": "lily.ledner",
+  "sSex": "y1lefn",
+  "cards": "b0289s",
+  "birthday": "2023-06-08",
+  "nation": "mg99cj",
+  "birthplace": "6vwvet",
+  "political": "kbjbxg",
+  "address": "Apt. 476 21840 Conrad Mountain， Kilbackstad， MA 25627",
+  "code": "39609",
+  "sTelephone": "(650) 570-6707",
+  "sYear": "i65hs2",
+  "dormitory": "40c300",
+  "city": "mbb6y3",
+  "company": "Weissnat-Reichert",
+  "pay": 60.71,
+  "graduate": "x1outb",
+  "sRemarks": "2wsbnl"
 }</code></pre>
                     </div>
                 </div>
@@ -2976,9 +3835,180 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            学生学号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sPwd</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生密码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">clNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            班级编号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sSex</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            性别</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cards</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            居民身份证</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">birthday</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            出生日期</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">nation</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            民族</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">birthplace</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            籍贯</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">political</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            政治面貌</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">address</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            家庭地址</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">code</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            邮政编码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sTelephone</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            固定电话</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sYear</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            入学年份</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">dormitory</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            宿舍号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">city</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            工作城市</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">company</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            公司名称</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">pay</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">float</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            工资</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">graduate</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            是否毕业生</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -2987,13 +4017,34 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/delete --data '919'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/delete --data '{
+  "id": "180",
+  "sPwd": "idqlr0",
+  "clNo": "xgjij9",
+  "sName": "lily.ledner",
+  "sSex": "5yfbx2",
+  "cards": "qpr3bv",
+  "birthday": "2023-06-08",
+  "nation": "xfghm7",
+  "birthplace": "xk889b",
+  "political": "jmlbst",
+  "address": "Apt. 476 21840 Conrad Mountain， Kilbackstad， MA 25627",
+  "code": "39609",
+  "sTelephone": "(650) 570-6707",
+  "sYear": "h3o0ec",
+  "dormitory": "f7epps",
+  "city": "7joufk",
+  "company": "Weissnat-Reichert",
+  "pay": 55.50,
+  "graduate": "ae3dib",
+  "sRemarks": "ug06ti"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">406</code></pre>
+                        <pre><code class="json">881</code></pre>
                     </div>
                 </div>
             </div>
@@ -3032,7 +4083,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             学生学号（主键）</p></td>
@@ -3216,33 +4267,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/add --data '{
-  "sNo": "lt6n89",
-  "sPwd": "c18xul",
-  "clNo": "98tkk7",
-  "sName": "joline.terry",
-  "sSex": "pgd38z",
-  "cards": "4qs4ve",
-  "birthday": "2023-05-31",
-  "nation": "z6rac5",
-  "birthplace": "kf5ys2",
-  "political": "xfgp8d",
-  "address": "Suite 229 8017 Brunilda Port， South Kathieside， IA 42726",
-  "code": "39616",
-  "sTelephone": "857-248-9537",
-  "sYear": "ajiw3q",
-  "dormitory": "npgoie",
-  "city": "5yiqma",
-  "company": "Mills, Pouros and Hahn",
-  "pay": 63.83,
-  "graduate": "23cu2j",
-  "sRemarks": "7f61ne"
+  "id": "180",
+  "sPwd": "cav4zd",
+  "clNo": "3wl3ms",
+  "sName": "lily.ledner",
+  "sSex": "k157q1",
+  "cards": "3zx822",
+  "birthday": "2023-06-08",
+  "nation": "wvjshi",
+  "birthplace": "ajclvu",
+  "political": "bhcjwx",
+  "address": "Apt. 476 21840 Conrad Mountain， Kilbackstad， MA 25627",
+  "code": "39609",
+  "sTelephone": "(650) 570-6707",
+  "sYear": "f21iy6",
+  "dormitory": "f2iare",
+  "city": "1yy4ud",
+  "company": "Weissnat-Reichert",
+  "pay": 86.37,
+  "graduate": "sri5mo",
+  "sRemarks": "8iika7"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">725</code></pre>
+                        <pre><code class="json">654</code></pre>
                     </div>
                 </div>
             </div>
@@ -3281,7 +4332,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             学生学号（主键）</p></td>
@@ -3465,33 +4516,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/update --data '{
-  "sNo": "4sx29p",
-  "sPwd": "lamc6k",
-  "clNo": "bg5f2p",
-  "sName": "joline.terry",
-  "sSex": "ea2cb2",
-  "cards": "saocp3",
-  "birthday": "2023-05-31",
-  "nation": "fwbgve",
-  "birthplace": "5hriqt",
-  "political": "plg7gq",
-  "address": "Suite 229 8017 Brunilda Port， South Kathieside， IA 42726",
-  "code": "39616",
-  "sTelephone": "857-248-9537",
-  "sYear": "ypb35g",
-  "dormitory": "nkjkhm",
-  "city": "yku2dq",
-  "company": "Mills, Pouros and Hahn",
-  "pay": 64.84,
-  "graduate": "kfbnid",
-  "sRemarks": "h5vits"
+  "id": "180",
+  "sPwd": "s85ugl",
+  "clNo": "z52hau",
+  "sName": "lily.ledner",
+  "sSex": "nhpi3e",
+  "cards": "6wemq0",
+  "birthday": "2023-06-08",
+  "nation": "n8bdd8",
+  "birthplace": "4aq0ym",
+  "political": "3rfo3d",
+  "address": "Apt. 476 21840 Conrad Mountain， Kilbackstad， MA 25627",
+  "code": "39609",
+  "sTelephone": "(650) 570-6707",
+  "sYear": "7fqg20",
+  "dormitory": "ci855z",
+  "city": "1wkyax",
+  "company": "Weissnat-Reichert",
+  "pay": 1.66,
+  "graduate": "uw9l25",
+  "sRemarks": "bvrflp"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">454</code></pre>
+                        <pre><code class="json">142</code></pre>
                     </div>
                 </div>
             </div>
@@ -3540,7 +4591,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（主键）</p></td>
@@ -3601,13 +4652,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "tId": 164,
-    "cNo": "uw1y0i",
-    "tNo": "lfhl5b",
-    "yearterm": "n0ruup",
-    "cycles": "1p5rn0",
-    "festival": "t761jx",
-    "classroom": "3r3tsh"
+    "id": 901,
+    "cNo": "xlkz8r",
+    "tNo": "3l7r32",
+    "yearterm": "rentis",
+    "cycles": "yprox1",
+    "festival": "kluhcu",
+    "classroom": "me3ukj"
   }
 ]</code></pre>
                     </div>
@@ -3651,7 +4702,61 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            授课序号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程编号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师编号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">yearterm</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学年学期</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cycles</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            周次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">festival</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            节次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">classroom</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            上课地点</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -3660,7 +4765,15 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/id --data '992'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/id --data '{
+  "id": 838,
+  "cNo": "7640z5",
+  "tNo": "on7tz4",
+  "yearterm": "ju219c",
+  "cycles": "9minj1",
+  "festival": "44lhtt",
+  "classroom": "dzjycr"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -3681,7 +4794,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（主键）</p></td>
@@ -3741,13 +4854,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "tId": 824,
-  "cNo": "2i2ul8",
-  "tNo": "6uqufy",
-  "yearterm": "a0xofd",
-  "cycles": "zjbuw9",
-  "festival": "1qovax",
-  "classroom": "ozf1ne"
+  "id": 854,
+  "cNo": "8hkx40",
+  "tNo": "iqhcwu",
+  "yearterm": "wus6ss",
+  "cycles": "rretry",
+  "festival": "s5ffu9",
+  "classroom": "hhqivx"
 }</code></pre>
                     </div>
                 </div>
@@ -3790,7 +4903,61 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            授课序号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程编号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师编号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">yearterm</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学年学期</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cycles</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            周次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">festival</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            节次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">classroom</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            上课地点</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -3799,13 +4966,21 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/delete --data '12'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/delete --data '{
+  "id": 914,
+  "cNo": "3uukqd",
+  "tNo": "4o6yc3",
+  "yearterm": "znq0u5",
+  "cycles": "0q09ev",
+  "festival": "q7m329",
+  "classroom": "n108gu"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">976</code></pre>
+                        <pre><code class="json">210</code></pre>
                     </div>
                 </div>
             </div>
@@ -3844,7 +5019,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（主键）</p></td>
@@ -3911,20 +5086,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/add --data '{
-  "tId": 777,
-  "cNo": "lktmli",
-  "tNo": "ul68t9",
-  "yearterm": "txfh41",
-  "cycles": "etdzbr",
-  "festival": "74dwdx",
-  "classroom": "2cmx61"
+  "id": 343,
+  "cNo": "4oyoio",
+  "tNo": "ygww4i",
+  "yearterm": "aa8bs1",
+  "cycles": "146au8",
+  "festival": "km3jpt",
+  "classroom": "183sbz"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">28</code></pre>
+                        <pre><code class="json">975</code></pre>
                     </div>
                 </div>
             </div>
@@ -3963,7 +5138,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（主键）</p></td>
@@ -4030,20 +5205,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/update --data '{
-  "tId": 210,
-  "cNo": "m40eym",
-  "tNo": "8k18wo",
-  "yearterm": "dv8wrm",
-  "cycles": "jngqbl",
-  "festival": "8gsirt",
-  "classroom": "6q7dxk"
+  "id": 655,
+  "cNo": "6sgx5a",
+  "tNo": "7nk6pg",
+  "yearterm": "yaemew",
+  "cycles": "swcqu8",
+  "festival": "r3clek",
+  "classroom": "b555xt"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">671</code></pre>
+                        <pre><code class="json">229</code></pre>
                     </div>
                 </div>
             </div>
@@ -4092,7 +5267,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             教师号（主键）</p></td>
@@ -4153,13 +5328,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "tNo": "hj9l85",
-    "tPwd": "lhe4lb",
-    "tName": "joline.terry",
-    "tSex": "djvi4d",
-    "email": "tabetha.heathcote@gmail.com",
-    "tTelephone": "857-248-9537",
-    "tRemarks": "j2pcvg"
+    "id": "180",
+    "tPwd": "ocdyoo",
+    "tName": "lily.ledner",
+    "tSex": "gfnqbd",
+    "email": "damaris.jakubowski@gmail.com",
+    "tTelephone": "(650) 570-6707",
+    "tRemarks": "qsitr8"
   }
 ]</code></pre>
                     </div>
@@ -4201,9 +5376,63 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            教师号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tPwd</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师密码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tSex</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师性别</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            E-mail</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tTelephone</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            联系电话</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4212,7 +5441,15 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/id --data '325'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/id --data '{
+  "id": "180",
+  "tPwd": "i0ebqs",
+  "tName": "lily.ledner",
+  "tSex": "qrhkze",
+  "email": "damaris.jakubowski@gmail.com",
+  "tTelephone": "(650) 570-6707",
+  "tRemarks": "g09l2i"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -4233,7 +5470,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             教师号（主键）</p></td>
@@ -4293,13 +5530,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "tNo": "7he9ct",
-  "tPwd": "5tbxjx",
-  "tName": "joline.terry",
-  "tSex": "ou6hig",
-  "email": "tabetha.heathcote@gmail.com",
-  "tTelephone": "857-248-9537",
-  "tRemarks": "ckkdux"
+  "id": "180",
+  "tPwd": "29u3w0",
+  "tName": "lily.ledner",
+  "tSex": "gw4apa",
+  "email": "damaris.jakubowski@gmail.com",
+  "tTelephone": "(650) 570-6707",
+  "tRemarks": "h15eu2"
 }</code></pre>
                     </div>
                 </div>
@@ -4340,9 +5577,63 @@
                     <tbody>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            教师号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tPwd</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师密码</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tSex</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            教师性别</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            E-mail</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tTelephone</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            联系电话</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4351,13 +5642,21 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/delete --data '563'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/delete --data '{
+  "id": "180",
+  "tPwd": "8bsvtd",
+  "tName": "lily.ledner",
+  "tSex": "p4wa1i",
+  "email": "damaris.jakubowski@gmail.com",
+  "tTelephone": "(650) 570-6707",
+  "tRemarks": "a1l05o"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">333</code></pre>
+                        <pre><code class="json">613</code></pre>
                     </div>
                 </div>
             </div>
@@ -4396,7 +5695,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             教师号（主键）</p></td>
@@ -4463,20 +5762,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/add --data '{
-  "tNo": "9hwuhn",
-  "tPwd": "5wn9yk",
-  "tName": "joline.terry",
-  "tSex": "ld5tdl",
-  "email": "tabetha.heathcote@gmail.com",
-  "tTelephone": "857-248-9537",
-  "tRemarks": "69azkf"
+  "id": "180",
+  "tPwd": "i6ozmt",
+  "tName": "lily.ledner",
+  "tSex": "wgoo3i",
+  "email": "damaris.jakubowski@gmail.com",
+  "tTelephone": "(650) 570-6707",
+  "tRemarks": "m732dk"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">900</code></pre>
+                        <pre><code class="json">241</code></pre>
                     </div>
                 </div>
             </div>
@@ -4515,7 +5814,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">tNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             教师号（主键）</p></td>
@@ -4582,20 +5881,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/update --data '{
-  "tNo": "a1kiv1",
-  "tPwd": "pjpqhp",
-  "tName": "joline.terry",
-  "tSex": "bpk54j",
-  "email": "tabetha.heathcote@gmail.com",
-  "tTelephone": "857-248-9537",
-  "tRemarks": "4f4557"
+  "id": "180",
+  "tPwd": "ti0z5c",
+  "tName": "lily.ledner",
+  "tSex": "f2itn7",
+  "email": "damaris.jakubowski@gmail.com",
+  "tTelephone": "(650) 570-6707",
+  "tRemarks": "7vsla8"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">30</code></pre>
+                        <pre><code class="json">451</code></pre>
                     </div>
                 </div>
             </div>
@@ -4644,7 +5943,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">yId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             序号</p></td>
@@ -4665,8 +5964,8 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "yId": 94,
-    "yearterm": "i25ye8"
+    "id": 548,
+    "yearterm": "4v7wuu"
   }
 ]</code></pre>
                     </div>
@@ -4710,7 +6009,16 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            序号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">yearterm</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学年学期</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4719,7 +6027,10 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/id --data '823'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/id --data '{
+  "id": 821,
+  "yearterm": "fbzaqv"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
@@ -4740,7 +6051,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">yId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             序号</p></td>
@@ -4760,8 +6071,8 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "yId": 495,
-  "yearterm": "u1x918"
+  "id": 506,
+  "yearterm": "int431"
 }</code></pre>
                     </div>
                 </div>
@@ -4804,7 +6115,16 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            No comments found.</p></td>
+                            序号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">yearterm</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学年学期</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4813,13 +6133,16 @@
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/delete --data '859'</code></pre>
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/delete --data '{
+  "id": 486,
+  "yearterm": "yhhyv7"
+}'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">58</code></pre>
+                        <pre><code class="json">46</code></pre>
                     </div>
                 </div>
             </div>
@@ -4858,7 +6181,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">yId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             序号</p></td>
@@ -4880,15 +6203,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/add --data '{
-  "yId": 11,
-  "yearterm": "2l8g1h"
+  "id": 702,
+  "yearterm": "m35z6l"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">678</code></pre>
+                        <pre><code class="json">924</code></pre>
                     </div>
                 </div>
             </div>
@@ -4927,7 +6250,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock">yId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             序号</p></td>
@@ -4949,15 +6272,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/update --data '{
-  "yId": 110,
-  "yearterm": "3cn0xe"
+  "id": 279,
+  "yearterm": "qa1u8k"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">668</code></pre>
+                        <pre><code class="json">828</code></pre>
                     </div>
                 </div>
             </div>
@@ -5036,7 +6359,7 @@
             </table>
         </div>
     </div>
-    <footer class="page-footer"><span class="copyright">Generated by smart-doc at 2023-05-31 13:12:39</span><span
+    <footer class="page-footer"><span class="copyright">Generated by smart-doc at 2023-06-08 21:14:20</span><span
             class="footer-modification">Suggestions,contact,support and error reporting on<a
             href="https://gitee.com/smart-doc-team/smart-doc" target="_blank">Gitee</a>or<a
             href="https://github.com/smart-doc-group/smart-doc.git" target="_blank">Github</a></span>
@@ -5045,7 +6368,7 @@
                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABlUlEQVRIS+2UvUvDQBiH398Rly4udnARwUXs4qAIOigI4iL30dTZ2T9AcNPVvUsXF7uYttdScNDFRRAnB11cFFwKxcXBJTQnJ6lEbRI/CIiY9e6e5/e+9+ZAGX/ImE9/QKCU2jfGbGTQqq4xZgtSyisiKmQgIAAVCCFWAGxnIOhqrdd/xyUrpRZsP40xSwA6AI57vd5eq9W6T6s8tQIppSKi+gDQNREprfVNkiRRwDlfY4xZ+FAIuSOi8Qjw0nEc5XnebZwkViClXA2T5+xhY8xus9ncEUJMAziITN5FEARuXLsGCoQQywBs8uEovJ+Scz7FGDuMSM4cx3E9z+u8r+SDQEq5SEQ1IhoZBE+QnBKRq7V+iEreCDjn84wxCx9NgidITnK5nFutVh/7e14FSqnZIAhqAMY+A4+TADjyfb/Ubref7J4XQXhxNvnEV+AJlbTy+XypUqn4KBaLBZuciCa/A0+opN5oNFz7FpUBbP4EHicxxsyAcz7HGDvvz3nar5+2Ho5wOQwsU5+KNGDa+r8grUP0DBLjtRtNKEliAAAAAElFTkSuQmCC"><span
             id="upText">Top</span></div>
 </div>
-<script src="search.js?v=1685509959885"></script>
+<script src="search.js?v=1686230060209"></script>
 <script>
     $(function(){const Accordion=function(el,multiple){this.el=el||{};this.multiple=multiple||false;const links=this.el.find(".dd");links.on("click",{el:this.el,multiple:this.multiple},this.dropdown)};Accordion.prototype.dropdown=function(e){const $el=e.data.el;const $this=$(this),$next=$this.next();$next.slideToggle();$this.parent().toggleClass("open");if(!e.data.multiple){$el.find(".submenu").not($next).slideUp("20").parent().removeClass("open")}};new Accordion($("#accordion"),false);hljs.highlightAll();$(window).scroll(function(){if($(window).scrollTop()>100){$("#toTop").fadeIn(1500);$("#toTop").hover(function(){$("#upArrow").hide();$("#upText").show()},function(){$("#upArrow").show();$("#upText").hide()})}else{$("#toTop").fadeOut(1500)}});$("#toTop").click(function(){$("body, html").animate({scrollTop:0},1000);return false})});
 
