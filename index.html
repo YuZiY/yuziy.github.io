@@ -6,7 +6,7 @@
     <meta content="smart-doc" name="generator">
     <title>API Reference</title>
     <link href="font.css" rel="stylesheet">
-    <link href="AllInOne.css?v=1686632857031" rel="stylesheet"/>
+    <link href="AllInOne.css?v=1686654679574" rel="stylesheet"/>
     <style>.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {
         background: #f7f7f8
     }
@@ -47,6 +47,10 @@
                     <li><a
                             href="#_1_1_6_登录">1.6.登录</a>
                     </li>
+
+                    <li><a
+                            href="#_1_1_7_通过id批量删除">1.7.通过id批量删除</a>
+                    </li>
                 </ul>
             </li>
             <li class="open"><a class="dd" href="#_班级信息表">2.班级信息表</a>
@@ -73,6 +77,10 @@
 
                     <li><a
                             href="#_1_2_6_通过名字查询班级信息表">2.6.通过名字查询班级信息表</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_2_7_通过id批量删除">2.7.通过id批量删除</a>
                     </li>
                 </ul>
             </li>
@@ -101,6 +109,10 @@
                     <li><a
                             href="#_1_3_6_通过名字查询课程信息表">3.6.通过名字查询课程信息表</a>
                     </li>
+
+                    <li><a
+                            href="#_1_3_7_通过id批量删除">3.7.通过id批量删除</a>
+                    </li>
                 </ul>
             </li>
             <li class="open"><a class="dd" href="#_学生选修及成绩表">4.学生选修及成绩表</a>
@@ -124,6 +136,10 @@
                     <li><a
                             href="#_1_4_5_修改学生选修及成绩表">4.5.修改学生选修及成绩表</a>
                     </li>
+
+                    <li><a
+                            href="#_1_4_6_通过id批量删除">4.6.通过id批量删除</a>
+                    </li>
                 </ul>
             </li>
             <li class="open"><a class="dd" href="#_请假表">5.请假表</a>
@@ -137,11 +153,23 @@
                     </li>
 
                     <li><a
-                            href="#_1_5_3_通过id删除请假表">5.3.通过id删除请假表</a>
+                            href="#_1_5_3_通过名字查询请假表">5.3.通过名字查询请假表</a>
                     </li>
 
                     <li><a
-                            href="#_1_5_4_添加请假表">5.4.添加请假表</a>
+                            href="#_1_5_4_通过id删除请假表">5.4.通过id删除请假表</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_5_5_添加请假表">5.5.添加请假表</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_5_6_修改请假表">5.6.修改请假表</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_5_7_通过id批量删除">5.7.通过id批量删除</a>
                     </li>
                 </ul>
             </li>
@@ -181,6 +209,10 @@
 
                     <li><a
                             href="#_1_6_9_登录">6.9.登录</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_6_10_通过id批量删除">6.10.通过id批量删除</a>
                     </li>
                 </ul>
             </li>
@@ -231,6 +263,10 @@
 
                     <li><a
                             href="#_1_8_6_通过名字查询教师信息表">8.6.通过名字查询教师信息表</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_8_7_通过id批量删除">8.7.通过id批量删除</a>
                     </li>
                 </ul>
             </li>
@@ -283,8 +319,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td class="tableblock halign-left valign-top"><p class="tableblock">v2023-06-13 13:07:37</p></td>
-                    <td class="tableblock halign-left valign-top"><p class="tableblock">2023-06-13 13:07:37</p>
+                    <td class="tableblock halign-left valign-top"><p class="tableblock">v2023-06-13 19:11:19</p></td>
+                    <td class="tableblock halign-left valign-top"><p class="tableblock">2023-06-13 19:11:19</p>
                     </td>
                     <td class="tableblock halign-left valign-top"><p class="tableblock">auto</p></td>
                     <td class="tableblock halign-left valign-top"><p class="tableblock">@A</p></td>
@@ -390,12 +426,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 529,
+    "id": 498,
     "adminName": "admin01",
-    "pwd": "6em2r7",
-    "aName": "stephan.considine",
-    "email": "jessica.berge@yahoo.com",
-    "telephone": "1-857-947-6702"
+    "pwd": "48y9zg",
+    "aName": "halina.streich",
+    "email": "franklin.reilly@hotmail.com",
+    "telephone": "219.714.9767"
   }
 ]</code></pre>
                     </div>
@@ -494,12 +530,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/id --data '{
-  "id": 405,
+  "id": 311,
   "adminName": "admin01",
-  "pwd": "mv6d97",
-  "aName": "stephan.considine",
-  "email": "jessica.berge@yahoo.com",
-  "telephone": "1-857-947-6702"
+  "pwd": "efng2q",
+  "aName": "halina.streich",
+  "email": "franklin.reilly@hotmail.com",
+  "telephone": "219.714.9767"
 }'</code></pre>
                     </div>
                 </div>
@@ -572,14 +608,16 @@
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">{
-  "id": 49,
-  "adminName": "admin01",
-  "pwd": "2vcuxd",
-  "aName": "stephan.considine",
-  "email": "jessica.berge@yahoo.com",
-  "telephone": "1-857-947-6702"
-}</code></pre>
+                        <pre><code class="json">[
+  {
+    "id": 620,
+    "adminName": "admin01",
+    "pwd": "599klc",
+    "aName": "halina.streich",
+    "email": "franklin.reilly@hotmail.com",
+    "telephone": "219.714.9767"
+  }
+]</code></pre>
                     </div>
                 </div>
             </div>
@@ -676,19 +714,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/delete --data '{
-  "id": 191,
+  "id": 335,
   "adminName": "admin01",
-  "pwd": "23b9nq",
-  "aName": "stephan.considine",
-  "email": "jessica.berge@yahoo.com",
-  "telephone": "1-857-947-6702"
+  "pwd": "uvaldh",
+  "aName": "halina.streich",
+  "email": "franklin.reilly@hotmail.com",
+  "telephone": "219.714.9767"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">549</code></pre>
+                        <pre><code class="json">123</code></pre>
                     </div>
                 </div>
             </div>
@@ -785,19 +823,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/add --data '{
-  "id": 626,
+  "id": 848,
   "adminName": "admin01",
-  "pwd": "3xffku",
-  "aName": "stephan.considine",
-  "email": "jessica.berge@yahoo.com",
-  "telephone": "1-857-947-6702"
+  "pwd": "vjlsg5",
+  "aName": "halina.streich",
+  "email": "franklin.reilly@hotmail.com",
+  "telephone": "219.714.9767"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">160</code></pre>
+                        <pre><code class="json">215</code></pre>
                     </div>
                 </div>
             </div>
@@ -894,19 +932,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/update --data '{
-  "id": 135,
+  "id": 554,
   "adminName": "admin01",
-  "pwd": "4oj1ww",
-  "aName": "stephan.considine",
-  "email": "jessica.berge@yahoo.com",
-  "telephone": "1-857-947-6702"
+  "pwd": "6zlfd0",
+  "aName": "halina.streich",
+  "email": "franklin.reilly@hotmail.com",
+  "telephone": "219.714.9767"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">339</code></pre>
+                        <pre><code class="json">233</code></pre>
                     </div>
                 </div>
             </div>
@@ -1003,19 +1041,79 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/login --data '{
-  "id": 519,
+  "id": 68,
   "adminName": "admin01",
-  "pwd": "dfj9d9",
-  "aName": "stephan.considine",
-  "email": "jessica.berge@yahoo.com",
-  "telephone": "1-857-947-6702"
+  "pwd": "r5umpl",
+  "aName": "halina.streich",
+  "email": "franklin.reilly@hotmail.com",
+  "telephone": "219.714.9767"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">417</code></pre>
+                        <pre><code class="json">648</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="19fd6fbae4355c595c548058efff5bcb"><h3 id="_1_1_7_通过id批量删除"><a
+                    class="anchor" href="#_1_1_7_通过id批量删除"></a><a class="link"
+                                                                                        href="#_1_1_7_通过id批量删除">1.7.通过id批量删除</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/admin/deletelist"
+                     id="19fd6fbae4355c595c548058efff5bcb-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/admin/deletelist">http://localhost:8080/admin/deletelist</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="19fd6fbae4355c595c548058efff5bcb-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="19fd6fbae4355c595c548058efff5bcb-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过id批量删除</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">ids</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">array</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            No comments found.,[array of string]</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/deletelist --data '[
+  "hffxhd",
+  "lkqjy4"
+]'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">881</code></pre>
                     </div>
                 </div>
             </div>
@@ -1117,12 +1215,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "clName": "stephan.considine",
-    "faculty": "kvjt42",
-    "professional": "zyiy6e",
-    "number": 822,
-    "counselor": "0sowm5"
+    "id": "56",
+    "clName": "halina.streich",
+    "faculty": "wjml0t",
+    "professional": "hpbwfv",
+    "number": 493,
+    "counselor": "vu3xq5"
   }
 ]</code></pre>
                     </div>
@@ -1221,12 +1319,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/id --data '{
-  "id": "54",
-  "clName": "stephan.considine",
-  "faculty": "6yabnw",
-  "professional": "99imhq",
-  "number": 824,
-  "counselor": "13gzw9"
+  "id": "56",
+  "clName": "halina.streich",
+  "faculty": "ua257z",
+  "professional": "urjw79",
+  "number": 832,
+  "counselor": "7mkk49"
 }'</code></pre>
                     </div>
                 </div>
@@ -1299,14 +1397,16 @@
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">{
-  "id": "54",
-  "clName": "stephan.considine",
-  "faculty": "orhlma",
-  "professional": "colx1f",
-  "number": 157,
-  "counselor": "v9laot"
-}</code></pre>
+                        <pre><code class="json">[
+  {
+    "id": "56",
+    "clName": "halina.streich",
+    "faculty": "yybw1d",
+    "professional": "90bve7",
+    "number": 675,
+    "counselor": "n0t8ib"
+  }
+]</code></pre>
                     </div>
                 </div>
             </div>
@@ -1403,19 +1503,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/delete --data '{
-  "id": "54",
-  "clName": "stephan.considine",
-  "faculty": "png3kg",
-  "professional": "8fwda8",
-  "number": 848,
-  "counselor": "atxxmg"
+  "id": "56",
+  "clName": "halina.streich",
+  "faculty": "cmleja",
+  "professional": "kz51ie",
+  "number": 729,
+  "counselor": "7e9j4c"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">706</code></pre>
+                        <pre><code class="json">119</code></pre>
                     </div>
                 </div>
             </div>
@@ -1512,19 +1612,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/add --data '{
-  "id": "54",
-  "clName": "stephan.considine",
-  "faculty": "wf8mxn",
-  "professional": "s047kj",
-  "number": 251,
-  "counselor": "dt88i8"
+  "id": "56",
+  "clName": "halina.streich",
+  "faculty": "teupc1",
+  "professional": "vsbjgb",
+  "number": 860,
+  "counselor": "lqk6c2"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">103</code></pre>
+                        <pre><code class="json">188</code></pre>
                     </div>
                 </div>
             </div>
@@ -1621,19 +1721,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/update --data '{
-  "id": "54",
-  "clName": "stephan.considine",
-  "faculty": "1nvn4c",
-  "professional": "a14l95",
-  "number": 898,
-  "counselor": "6poa4l"
+  "id": "56",
+  "clName": "halina.streich",
+  "faculty": "fnr9e7",
+  "professional": "42f3gq",
+  "number": 202,
+  "counselor": "8ubtep"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">242</code></pre>
+                        <pre><code class="json">846</code></pre>
                     </div>
                 </div>
             </div>
@@ -1730,12 +1830,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/name --data '{
-  "id": "54",
-  "clName": "stephan.considine",
-  "faculty": "gzffid",
-  "professional": "e3iu08",
-  "number": 956,
-  "counselor": "arr9bc"
+  "id": "56",
+  "clName": "halina.streich",
+  "faculty": "3f1oqu",
+  "professional": "518ai1",
+  "number": 524,
+  "counselor": "7281vs"
 }'</code></pre>
                     </div>
                 </div>
@@ -1810,14 +1910,74 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "clName": "stephan.considine",
-    "faculty": "01lrax",
-    "professional": "13frsu",
-    "number": 419,
-    "counselor": "mflxkg"
+    "id": "56",
+    "clName": "halina.streich",
+    "faculty": "a8g0rt",
+    "professional": "bosqnq",
+    "number": 179,
+    "counselor": "41mc3t"
   }
 ]</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="0a5bd1ba8481582aa3c55e6d3e73fdce"><h3 id="_1_2_7_通过id批量删除"><a
+                    class="anchor" href="#_1_2_7_通过id批量删除"></a><a class="link"
+                                                                                        href="#_1_2_7_通过id批量删除">2.7.通过id批量删除</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/class/deletelist"
+                     id="0a5bd1ba8481582aa3c55e6d3e73fdce-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/class/deletelist">http://localhost:8080/class/deletelist</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="0a5bd1ba8481582aa3c55e6d3e73fdce-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="0a5bd1ba8481582aa3c55e6d3e73fdce-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过id批量删除</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">ids</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">array</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            No comments found.,[array of string]</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/deletelist --data '[
+  "mmdjge",
+  "ohnxz0"
+]'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">34</code></pre>
                     </div>
                 </div>
             </div>
@@ -1919,12 +2079,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "cName": "stephan.considine",
-    "type": "5pblig",
-    "unit": "4yican",
-    "hours": "7e6zv5",
-    "testmode": "prgstd"
+    "id": "56",
+    "cName": "halina.streich",
+    "type": "pqvv90",
+    "unit": "nb2j0w",
+    "hours": "t0clgg",
+    "testmode": "xk4rw4"
   }
 ]</code></pre>
                     </div>
@@ -2023,12 +2183,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/id --data '{
-  "id": "54",
-  "cName": "stephan.considine",
-  "type": "30r8ga",
-  "unit": "qv90w7",
-  "hours": "pu6ke8",
-  "testmode": "5eo0vb"
+  "id": "56",
+  "cName": "halina.streich",
+  "type": "gse03v",
+  "unit": "842c62",
+  "hours": "zc15b0",
+  "testmode": "8o53t2"
 }'</code></pre>
                     </div>
                 </div>
@@ -2101,14 +2261,16 @@
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">{
-  "id": "54",
-  "cName": "stephan.considine",
-  "type": "l5q6di",
-  "unit": "58tgr2",
-  "hours": "ntf698",
-  "testmode": "urbbtn"
-}</code></pre>
+                        <pre><code class="json">[
+  {
+    "id": "56",
+    "cName": "halina.streich",
+    "type": "cijezl",
+    "unit": "1f9qe7",
+    "hours": "8pr93b",
+    "testmode": "qhf4x2"
+  }
+]</code></pre>
                     </div>
                 </div>
             </div>
@@ -2205,19 +2367,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/delete --data '{
-  "id": "54",
-  "cName": "stephan.considine",
-  "type": "70149t",
-  "unit": "np7d8n",
-  "hours": "bhl064",
-  "testmode": "fs8t55"
+  "id": "56",
+  "cName": "halina.streich",
+  "type": "tyt0nm",
+  "unit": "b31a7h",
+  "hours": "kt8s2s",
+  "testmode": "dk7a2a"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">630</code></pre>
+                        <pre><code class="json">959</code></pre>
                     </div>
                 </div>
             </div>
@@ -2314,19 +2476,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/add --data '{
-  "id": "54",
-  "cName": "stephan.considine",
-  "type": "n2v8bw",
-  "unit": "39k28m",
-  "hours": "d4o3ip",
-  "testmode": "i3d3rq"
+  "id": "56",
+  "cName": "halina.streich",
+  "type": "21b1a1",
+  "unit": "ku2d7t",
+  "hours": "9t6ira",
+  "testmode": "epzigz"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">331</code></pre>
+                        <pre><code class="json">282</code></pre>
                     </div>
                 </div>
             </div>
@@ -2423,19 +2585,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/update --data '{
-  "id": "54",
-  "cName": "stephan.considine",
-  "type": "egzsh7",
-  "unit": "mp2bfu",
-  "hours": "c0lwug",
-  "testmode": "7ixsji"
+  "id": "56",
+  "cName": "halina.streich",
+  "type": "i5jpwi",
+  "unit": "okw76r",
+  "hours": "e06bll",
+  "testmode": "ae1pd7"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">163</code></pre>
+                        <pre><code class="json">8</code></pre>
                     </div>
                 </div>
             </div>
@@ -2532,12 +2694,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/name --data '{
-  "id": "54",
-  "cName": "stephan.considine",
-  "type": "01zejw",
-  "unit": "wynltx",
-  "hours": "kew4nd",
-  "testmode": "3l5tn5"
+  "id": "56",
+  "cName": "halina.streich",
+  "type": "otnfjw",
+  "unit": "3k39c8",
+  "hours": "n18wza",
+  "testmode": "7o726e"
 }'</code></pre>
                     </div>
                 </div>
@@ -2612,14 +2774,74 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "cName": "stephan.considine",
-    "type": "2hi6lm",
-    "unit": "kcegpe",
-    "hours": "mayi03",
-    "testmode": "z5jyz0"
+    "id": "56",
+    "cName": "halina.streich",
+    "type": "f1rbc5",
+    "unit": "u6p27h",
+    "hours": "awdwmo",
+    "testmode": "nembem"
   }
 ]</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="a9e0cb3a954dee026ee6cc2b86b9835c"><h3 id="_1_3_7_通过id批量删除"><a
+                    class="anchor" href="#_1_3_7_通过id批量删除"></a><a class="link"
+                                                                                        href="#_1_3_7_通过id批量删除">3.7.通过id批量删除</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/course/deletelist"
+                     id="a9e0cb3a954dee026ee6cc2b86b9835c-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/course/deletelist">http://localhost:8080/course/deletelist</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="a9e0cb3a954dee026ee6cc2b86b9835c-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="a9e0cb3a954dee026ee6cc2b86b9835c-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过id批量删除</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">ids</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">array</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            No comments found.,[array of string]</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/deletelist --data '[
+  "xz5f9v",
+  "wox46y"
+]'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">537</code></pre>
                     </div>
                 </div>
             </div>
@@ -2761,17 +2983,17 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 727,
-    "sNo": "bzn3o1",
-    "tId": 458,
-    "round": "miz94p",
-    "tEsttime": "2023-06-13 13:07:38",
-    "tEstsite": "07gxyt",
-    "sEat": "jbm0et",
-    "uScore": 695,
-    "eScore": 641,
-    "tScore": 456,
-    "eRemarks": "y99y1h"
+    "id": 98,
+    "sNo": "43uhsf",
+    "tId": 881,
+    "round": "nrwd7n",
+    "tEsttime": "2023-06-13 19:11:21",
+    "tEstsite": "aao8ns",
+    "sEat": "mu24y9",
+    "uScore": 292,
+    "eScore": 300,
+    "tScore": 963,
+    "eRemarks": "27yaek"
   }
 ]</code></pre>
                     </div>
@@ -2915,17 +3137,17 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/id --data '{
-  "id": 533,
-  "sNo": "wrx17b",
-  "tId": 847,
-  "round": "5emo0e",
-  "tEsttime": "2023-06-13 13:07:38",
-  "tEstsite": "0wcq2j",
-  "sEat": "g7nf4s",
-  "uScore": 250,
-  "eScore": 472,
-  "tScore": 46,
-  "eRemarks": "bhrqot"
+  "id": 548,
+  "sNo": "6wpprn",
+  "tId": 333,
+  "round": "4xkdrr",
+  "tEsttime": "2023-06-13 19:11:21",
+  "tEstsite": "86h1hx",
+  "sEat": "ci1iip",
+  "uScore": 430,
+  "eScore": 471,
+  "tScore": 888,
+  "eRemarks": "09ms7i"
 }'</code></pre>
                     </div>
                 </div>
@@ -3038,19 +3260,21 @@
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">{
-  "id": 78,
-  "sNo": "kccd8d",
-  "tId": 380,
-  "round": "t2jz74",
-  "tEsttime": "2023-06-13 13:07:38",
-  "tEstsite": "f9713l",
-  "sEat": "kxemfa",
-  "uScore": 831,
-  "eScore": 392,
-  "tScore": 116,
-  "eRemarks": "c3zmu4"
-}</code></pre>
+                        <pre><code class="json">[
+  {
+    "id": 974,
+    "sNo": "m2e8kh",
+    "tId": 590,
+    "round": "l8pi0v",
+    "tEsttime": "2023-06-13 19:11:21",
+    "tEstsite": "fo276j",
+    "sEat": "3h27g6",
+    "uScore": 754,
+    "eScore": 219,
+    "tScore": 956,
+    "eRemarks": "rm6oj7"
+  }
+]</code></pre>
                     </div>
                 </div>
             </div>
@@ -3192,24 +3416,24 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/delete --data '{
-  "id": 668,
-  "sNo": "ex7p51",
-  "tId": 118,
-  "round": "ztik6z",
-  "tEsttime": "2023-06-13 13:07:38",
-  "tEstsite": "awdzbi",
-  "sEat": "m0auzr",
-  "uScore": 149,
-  "eScore": 321,
-  "tScore": 661,
-  "eRemarks": "nfi5qe"
+  "id": 330,
+  "sNo": "fhtcj4",
+  "tId": 668,
+  "round": "0nih7v",
+  "tEsttime": "2023-06-13 19:11:21",
+  "tEstsite": "deza65",
+  "sEat": "buhekl",
+  "uScore": 854,
+  "eScore": 166,
+  "tScore": 345,
+  "eRemarks": "v7gznv"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">584</code></pre>
+                        <pre><code class="json">229</code></pre>
                     </div>
                 </div>
             </div>
@@ -3351,24 +3575,24 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/add --data '{
-  "id": 443,
-  "sNo": "m6qogz",
-  "tId": 911,
-  "round": "vhh1vv",
-  "tEsttime": "2023-06-13 13:07:38",
-  "tEstsite": "njy5pr",
-  "sEat": "g0zq09",
-  "uScore": 748,
-  "eScore": 431,
-  "tScore": 283,
-  "eRemarks": "gqeejw"
+  "id": 960,
+  "sNo": "ofg12m",
+  "tId": 215,
+  "round": "m3aobc",
+  "tEsttime": "2023-06-13 19:11:21",
+  "tEstsite": "m96339",
+  "sEat": "hw4ler",
+  "uScore": 624,
+  "eScore": 291,
+  "tScore": 717,
+  "eRemarks": "t4ejl9"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">122</code></pre>
+                        <pre><code class="json">608</code></pre>
                     </div>
                 </div>
             </div>
@@ -3510,24 +3734,84 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/update --data '{
-  "id": 718,
-  "sNo": "cqp686",
-  "tId": 641,
-  "round": "7b3ddg",
-  "tEsttime": "2023-06-13 13:07:38",
-  "tEstsite": "3vlcpk",
-  "sEat": "yg8mok",
-  "uScore": 236,
-  "eScore": 557,
-  "tScore": 622,
-  "eRemarks": "bjwe82"
+  "id": 30,
+  "sNo": "kh8u9p",
+  "tId": 157,
+  "round": "fos2qt",
+  "tEsttime": "2023-06-13 19:11:21",
+  "tEstsite": "1u5sqv",
+  "sEat": "zucbuf",
+  "uScore": 369,
+  "eScore": 126,
+  "tScore": 441,
+  "eRemarks": "kyv1t3"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">862</code></pre>
+                        <pre><code class="json">178</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="cb49b888b6224fddfcbf535433c76669"><h3 id="_1_4_6_通过id批量删除"><a
+                    class="anchor" href="#_1_4_6_通过id批量删除"></a><a class="link"
+                                                                                        href="#_1_4_6_通过id批量删除">4.6.通过id批量删除</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/elective/deletelist"
+                     id="cb49b888b6224fddfcbf535433c76669-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/elective/deletelist">http://localhost:8080/elective/deletelist</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="cb49b888b6224fddfcbf535433c76669-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="cb49b888b6224fddfcbf535433c76669-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过id批量删除</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">ids</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">array</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            No comments found.,[array of string]</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/deletelist --data '[
+  "ybs68p",
+  "nhg81a"
+]'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">341</code></pre>
                     </div>
                 </div>
             </div>
@@ -3622,6 +3906,14 @@
                             备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
@@ -3629,12 +3921,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "student": "n6i7ut",
-    "startTime": "2023-06-13 13:07:38",
-    "endTime": "2023-06-13 13:07:38",
-    "leaveType": "3tr6tn",
-    "remark": "2py57d"
+    "id": "56",
+    "student": "ks28ky",
+    "startTime": "2023-06-13 19:11:21",
+    "endTime": "2023-06-13 19:11:21",
+    "leaveType": "netnub",
+    "remark": "pj53z2",
+    "approval": "7gzh46"
   }
 ]</code></pre>
                     </div>
@@ -3727,18 +4020,28 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/id --data '{
-  "id": "54",
-  "student": "6oauvq",
-  "startTime": "2023-06-13 13:07:38",
-  "endTime": "2023-06-13 13:07:38",
-  "leaveType": "3r9htc",
-  "remark": "b5nqqc"
+  "id": "56",
+  "student": "dxu7vc",
+  "startTime": "2023-06-13 19:11:21",
+  "endTime": "2023-06-13 19:11:21",
+  "leaveType": "ttbfyj",
+  "remark": "nh3hx1",
+  "approval": "163x6l"
 }'</code></pre>
                     </div>
                 </div>
@@ -3806,6 +4109,14 @@
                             备注</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
@@ -3813,21 +4124,225 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "student": "9prx34",
-    "startTime": "2023-06-13 13:07:38",
-    "endTime": "2023-06-13 13:07:38",
-    "leaveType": "8nxprk",
-    "remark": "kjq4dt"
+    "id": "56",
+    "student": "hwv3s0",
+    "startTime": "2023-06-13 19:11:21",
+    "endTime": "2023-06-13 19:11:21",
+    "leaveType": "rcqwcj",
+    "remark": "dzqyn0",
+    "approval": "ef6ry9"
   }
 ]</code></pre>
                     </div>
                 </div>
             </div>
 
-            <div class="sect2" id="3666ccfce88ed895729fcd71d2272a7c"><h3 id="_1_5_3_通过id删除请假表"><a
-                    class="anchor" href="#_1_5_3_通过id删除请假表"></a><a class="link"
-                                                                                        href="#_1_5_3_通过id删除请假表">5.3.通过id删除请假表</a>
+            <div class="sect2" id="a50a9c20d721e43c1205198711c703eb"><h3 id="_1_5_3_通过名字查询请假表"><a
+                    class="anchor" href="#_1_5_3_通过名字查询请假表"></a><a class="link"
+                                                                                        href="#_1_5_3_通过名字查询请假表">5.3.通过名字查询请假表</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/leaves/name"
+                     id="a50a9c20d721e43c1205198711c703eb-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/leaves/name">http://localhost:8080/leaves/name</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="a50a9c20d721e43c1205198711c703eb-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="a50a9c20d721e43c1205198711c703eb-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过名字查询请假表</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            请假表id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">student</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">startTime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            开始时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            结束时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">leaveType</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            请假类型</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">remark</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/name --data '{
+  "id": "56",
+  "student": "cspf8i",
+  "startTime": "2023-06-13 19:11:21",
+  "endTime": "2023-06-13 19:11:21",
+  "leaveType": "iwfhy8",
+  "remark": "xq34ke",
+  "approval": "ljchnk"
+}'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Field</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            请假表id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">student</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">startTime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            开始时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            结束时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">leaveType</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            请假类型</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">remark</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">[
+  {
+    "id": "56",
+    "student": "364s8n",
+    "startTime": "2023-06-13 19:11:21",
+    "endTime": "2023-06-13 19:11:21",
+    "leaveType": "xc8pc3",
+    "remark": "2dewke",
+    "approval": "uwovsz"
+  }
+]</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="3666ccfce88ed895729fcd71d2272a7c"><h3 id="_1_5_4_通过id删除请假表"><a
+                    class="anchor" href="#_1_5_4_通过id删除请假表"></a><a class="link"
+                                                                                        href="#_1_5_4_通过id删除请假表">5.4.通过id删除请假表</a>
             </h3>
                 <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/leaves/delete"
                      id="3666ccfce88ed895729fcd71d2272a7c-url"><p><strong>URL:</strong><a class="bare"
@@ -3911,32 +4426,42 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/delete --data '{
-  "id": "54",
-  "student": "poku3h",
-  "startTime": "2023-06-13 13:07:38",
-  "endTime": "2023-06-13 13:07:38",
-  "leaveType": "ka544p",
-  "remark": "0zx0rg"
+  "id": "56",
+  "student": "snjvv1",
+  "startTime": "2023-06-13 19:11:21",
+  "endTime": "2023-06-13 19:11:21",
+  "leaveType": "3d589e",
+  "remark": "iyo3no",
+  "approval": "ypq5lv"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">279</code></pre>
+                        <pre><code class="json">366</code></pre>
                     </div>
                 </div>
             </div>
 
-            <div class="sect2" id="976eb129daf233046197ed384a426370"><h3 id="_1_5_4_添加请假表"><a
-                    class="anchor" href="#_1_5_4_添加请假表"></a><a class="link"
-                                                                                        href="#_1_5_4_添加请假表">5.4.添加请假表</a>
+            <div class="sect2" id="976eb129daf233046197ed384a426370"><h3 id="_1_5_5_添加请假表"><a
+                    class="anchor" href="#_1_5_5_添加请假表"></a><a class="link"
+                                                                                        href="#_1_5_5_添加请假表">5.5.添加请假表</a>
             </h3>
                 <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/leaves/add"
                      id="976eb129daf233046197ed384a426370-url"><p><strong>URL:</strong><a class="bare"
@@ -4020,25 +4545,214 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="paragraph"><p><strong>Request-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/add --data '{
-  "id": "54",
-  "student": "575e5l",
-  "startTime": "2023-06-13 13:07:38",
-  "endTime": "2023-06-13 13:07:38",
-  "leaveType": "z0gj7l",
-  "remark": "al9h4i"
+  "id": "56",
+  "student": "5pmvkd",
+  "startTime": "2023-06-13 19:11:21",
+  "endTime": "2023-06-13 19:11:21",
+  "leaveType": "xyrsqz",
+  "remark": "myqwz7",
+  "approval": "te07e6"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">44</code></pre>
+                        <pre><code class="json">169</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="efed1ade1fcda736193d7057587ae1e7"><h3 id="_1_5_6_修改请假表"><a
+                    class="anchor" href="#_1_5_6_修改请假表"></a><a class="link"
+                                                                                        href="#_1_5_6_修改请假表">5.6.修改请假表</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/leaves/update"
+                     id="efed1ade1fcda736193d7057587ae1e7-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/leaves/update">http://localhost:8080/leaves/update</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="efed1ade1fcda736193d7057587ae1e7-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="efed1ade1fcda736193d7057587ae1e7-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>修改请假表</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            请假表id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">student</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">startTime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            开始时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            结束时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">leaveType</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            请假类型</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">remark</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">approval</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            审批状态</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/update --data '{
+  "id": "56",
+  "student": "na0qq4",
+  "startTime": "2023-06-13 19:11:21",
+  "endTime": "2023-06-13 19:11:21",
+  "leaveType": "a7sh9x",
+  "remark": "hi007l",
+  "approval": "45w2ev"
+}'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">363</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="3666ccfce88ed895729fcd71d2272a7c"><h3 id="_1_5_7_通过id批量删除"><a
+                    class="anchor" href="#_1_5_7_通过id批量删除"></a><a class="link"
+                                                                                        href="#_1_5_7_通过id批量删除">5.7.通过id批量删除</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/leaves/deletelist"
+                     id="3666ccfce88ed895729fcd71d2272a7c-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/leaves/deletelist">http://localhost:8080/leaves/deletelist</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="3666ccfce88ed895729fcd71d2272a7c-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="3666ccfce88ed895729fcd71d2272a7c-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过id批量删除</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">ids</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">array</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            No comments found.,[array of string]</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/deletelist --data '[
+  "1wmz76",
+  "z7g3n4"
+]'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">956</code></pre>
                     </div>
                 </div>
             </div>
@@ -4252,26 +4966,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "sPwd": "9f1f35",
-    "clNo": "uia2yv",
-    "sName": "stephan.considine",
-    "sSex": "p4d7d3",
-    "cards": "egohym",
+    "id": "56",
+    "sPwd": "9m7kek",
+    "clNo": "7f4qk1",
+    "sName": "halina.streich",
+    "sSex": "2ezx7p",
+    "cards": "0cx94j",
     "birthday": "2023-06-13",
-    "nation": "knr8t7",
-    "birthplace": "cgy62u",
-    "political": "e8dv2l",
-    "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-    "code": "76438",
-    "sTelephone": "1-857-947-6702",
-    "sYear": "grtjo4",
-    "dormitory": "pswe8j",
-    "city": "rxenje",
-    "company": "Schinner Inc",
-    "pay": 99.06,
-    "graduate": "tfxshd",
-    "sRemarks": "vlne8u"
+    "nation": "b8zjko",
+    "birthplace": "liiodf",
+    "political": "y3a23g",
+    "address": "562 Larkin Flats， Sukmouth， RI 45584",
+    "code": "59915",
+    "sTelephone": "219.714.9767",
+    "sYear": "ie7faj",
+    "dormitory": "fodsee",
+    "city": "by5dkb",
+    "company": "Schiller and Sons",
+    "pay": 76.73,
+    "graduate": "sz6si5",
+    "sRemarks": "djtyki"
   }
 ]</code></pre>
                     </div>
@@ -4496,26 +5210,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/id --data '{
-  "id": "54",
-  "sPwd": "8ezjcp",
-  "clNo": "s20vqa",
-  "sName": "stephan.considine",
-  "sSex": "4755lx",
-  "cards": "13px3r",
+  "id": "56",
+  "sPwd": "7tu5jh",
+  "clNo": "mlnu5e",
+  "sName": "halina.streich",
+  "sSex": "7uhujt",
+  "cards": "ruvos5",
   "birthday": "2023-06-13",
-  "nation": "2v4177",
-  "birthplace": "49gd5k",
-  "political": "v4ccxc",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "yv3h4d",
-  "dormitory": "7r7n7d",
-  "city": "1995cf",
-  "company": "Schinner Inc",
-  "pay": 35.33,
-  "graduate": "u13px0",
-  "sRemarks": "kq6lg5"
+  "nation": "9ga0c9",
+  "birthplace": "cwh1w6",
+  "political": "953tnb",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "kvmbdy",
+  "dormitory": "u85azm",
+  "city": "7tun2u",
+  "company": "Schiller and Sons",
+  "pay": 52.18,
+  "graduate": "7nyl0p",
+  "sRemarks": "f76u2l"
 }'</code></pre>
                     </div>
                 </div>
@@ -4702,26 +5416,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "sPwd": "4o5451",
-    "clNo": "if80pq",
-    "sName": "stephan.considine",
-    "sSex": "bguwhk",
-    "cards": "prdtvf",
+    "id": "56",
+    "sPwd": "1joboc",
+    "clNo": "uukdsd",
+    "sName": "halina.streich",
+    "sSex": "nrdhxd",
+    "cards": "yiv1ep",
     "birthday": "2023-06-13",
-    "nation": "5v80q7",
-    "birthplace": "zb4yf0",
-    "political": "60x853",
-    "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-    "code": "76438",
-    "sTelephone": "1-857-947-6702",
-    "sYear": "ja1j87",
-    "dormitory": "qsr7gg",
-    "city": "e73ne6",
-    "company": "Schinner Inc",
-    "pay": 63.31,
-    "graduate": "x4r0xa",
-    "sRemarks": "dm0vt8"
+    "nation": "12sszr",
+    "birthplace": "xwoa6n",
+    "political": "ug7pal",
+    "address": "562 Larkin Flats， Sukmouth， RI 45584",
+    "code": "59915",
+    "sTelephone": "219.714.9767",
+    "sYear": "mh2cty",
+    "dormitory": "a9yvpr",
+    "city": "8g9asr",
+    "company": "Schiller and Sons",
+    "pay": 70.36,
+    "graduate": "gwz09x",
+    "sRemarks": "o1nmrx"
   }
 ]</code></pre>
                     </div>
@@ -4946,26 +5660,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/clNo --data '{
-  "id": "54",
-  "sPwd": "al7m99",
-  "clNo": "wg056c",
-  "sName": "stephan.considine",
-  "sSex": "xfoo33",
-  "cards": "bdml24",
+  "id": "56",
+  "sPwd": "x11ul7",
+  "clNo": "d4otlk",
+  "sName": "halina.streich",
+  "sSex": "nmfn6d",
+  "cards": "eac91n",
   "birthday": "2023-06-13",
-  "nation": "nx1shk",
-  "birthplace": "ccaggw",
-  "political": "8r057t",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "q3n04g",
-  "dormitory": "8xmva6",
-  "city": "rqcik1",
-  "company": "Schinner Inc",
-  "pay": 34.70,
-  "graduate": "uzty7r",
-  "sRemarks": "2jniiw"
+  "nation": "ypf4ch",
+  "birthplace": "vnwr0n",
+  "political": "czjjsy",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "qppthb",
+  "dormitory": "1mwqq3",
+  "city": "jyuc7r",
+  "company": "Schiller and Sons",
+  "pay": 28.95,
+  "graduate": "6lz1us",
+  "sRemarks": "itrs1g"
 }'</code></pre>
                     </div>
                 </div>
@@ -5152,26 +5866,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "sPwd": "t36jww",
-    "clNo": "9cus09",
-    "sName": "stephan.considine",
-    "sSex": "s6mtct",
-    "cards": "nbh5eq",
+    "id": "56",
+    "sPwd": "26bfzl",
+    "clNo": "lu7ver",
+    "sName": "halina.streich",
+    "sSex": "7uwz4r",
+    "cards": "xfcoeo",
     "birthday": "2023-06-13",
-    "nation": "gngzg1",
-    "birthplace": "ljjxhs",
-    "political": "0s8jhz",
-    "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-    "code": "76438",
-    "sTelephone": "1-857-947-6702",
-    "sYear": "z7banl",
-    "dormitory": "dmggb9",
-    "city": "74fnhw",
-    "company": "Schinner Inc",
-    "pay": 86.31,
-    "graduate": "8h0tdq",
-    "sRemarks": "s1oux1"
+    "nation": "v3pbbm",
+    "birthplace": "m1ike2",
+    "political": "l2357e",
+    "address": "562 Larkin Flats， Sukmouth， RI 45584",
+    "code": "59915",
+    "sTelephone": "219.714.9767",
+    "sYear": "kpw01i",
+    "dormitory": "wq50g8",
+    "city": "00zusp",
+    "company": "Schiller and Sons",
+    "pay": 7.40,
+    "graduate": "0f25qm",
+    "sRemarks": "c26ff9"
   }
 ]</code></pre>
                     </div>
@@ -5396,26 +6110,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/sname --data '{
-  "id": "54",
-  "sPwd": "h8hokg",
-  "clNo": "blrstc",
-  "sName": "stephan.considine",
-  "sSex": "tyihq3",
-  "cards": "d4opwd",
+  "id": "56",
+  "sPwd": "44ebrm",
+  "clNo": "x0ztph",
+  "sName": "halina.streich",
+  "sSex": "06t2wq",
+  "cards": "i9s0gp",
   "birthday": "2023-06-13",
-  "nation": "0yv7v3",
-  "birthplace": "9plfep",
-  "political": "ne6zli",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "rm7tye",
-  "dormitory": "9x76y9",
-  "city": "e8ia2k",
-  "company": "Schinner Inc",
-  "pay": 16.34,
-  "graduate": "tao57d",
-  "sRemarks": "2iscko"
+  "nation": "7venwu",
+  "birthplace": "qmpy1m",
+  "political": "igh7r8",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "i4wdza",
+  "dormitory": "fwqrlh",
+  "city": "juye50",
+  "company": "Schiller and Sons",
+  "pay": 87.81,
+  "graduate": "oyadz8",
+  "sRemarks": "pammtr"
 }'</code></pre>
                     </div>
                 </div>
@@ -5602,26 +6316,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "sPwd": "tzy7rg",
-    "clNo": "qsvrge",
-    "sName": "stephan.considine",
-    "sSex": "9df8g9",
-    "cards": "u3gugq",
+    "id": "56",
+    "sPwd": "4z6e2y",
+    "clNo": "074fkx",
+    "sName": "halina.streich",
+    "sSex": "ebtpjg",
+    "cards": "ikqv87",
     "birthday": "2023-06-13",
-    "nation": "f92kiu",
-    "birthplace": "0znyjn",
-    "political": "oblpbh",
-    "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-    "code": "76438",
-    "sTelephone": "1-857-947-6702",
-    "sYear": "jaj980",
-    "dormitory": "o4bd5p",
-    "city": "7buwro",
-    "company": "Schinner Inc",
-    "pay": 98.09,
-    "graduate": "eaa4d6",
-    "sRemarks": "n7an2i"
+    "nation": "5vihrj",
+    "birthplace": "5kjwvs",
+    "political": "beo13u",
+    "address": "562 Larkin Flats， Sukmouth， RI 45584",
+    "code": "59915",
+    "sTelephone": "219.714.9767",
+    "sYear": "bw20fl",
+    "dormitory": "4nlo7y",
+    "city": "f7zezk",
+    "company": "Schiller and Sons",
+    "pay": 24.95,
+    "graduate": "e8qaxk",
+    "sRemarks": "5yeb5m"
   }
 ]</code></pre>
                     </div>
@@ -5846,26 +6560,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/dormitory --data '{
-  "id": "54",
-  "sPwd": "bqiusn",
-  "clNo": "m8q3ct",
-  "sName": "stephan.considine",
-  "sSex": "b6kag0",
-  "cards": "f7gc89",
+  "id": "56",
+  "sPwd": "7wnao2",
+  "clNo": "h1jvmh",
+  "sName": "halina.streich",
+  "sSex": "e9htxi",
+  "cards": "q3bhgb",
   "birthday": "2023-06-13",
-  "nation": "1g962e",
-  "birthplace": "97u8a8",
-  "political": "rodn72",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "675u2o",
-  "dormitory": "65eaq8",
-  "city": "t2pl3s",
-  "company": "Schinner Inc",
-  "pay": 24.37,
-  "graduate": "u9btz5",
-  "sRemarks": "4f9bmu"
+  "nation": "h8ine4",
+  "birthplace": "ts2qzj",
+  "political": "bm3n1h",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "im6l6v",
+  "dormitory": "jgi0fp",
+  "city": "3qjhij",
+  "company": "Schiller and Sons",
+  "pay": 68.01,
+  "graduate": "0aeikx",
+  "sRemarks": "zjerh6"
 }'</code></pre>
                     </div>
                 </div>
@@ -6052,26 +6766,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "sPwd": "121xt9",
-    "clNo": "eodx35",
-    "sName": "stephan.considine",
-    "sSex": "p6xlg4",
-    "cards": "jmm104",
+    "id": "56",
+    "sPwd": "ze4u4y",
+    "clNo": "mk8cit",
+    "sName": "halina.streich",
+    "sSex": "au60ab",
+    "cards": "honvru",
     "birthday": "2023-06-13",
-    "nation": "g0zypk",
-    "birthplace": "s7lgox",
-    "political": "bfpu9x",
-    "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-    "code": "76438",
-    "sTelephone": "1-857-947-6702",
-    "sYear": "wizhst",
-    "dormitory": "d9gbtc",
-    "city": "eitq3w",
-    "company": "Schinner Inc",
-    "pay": 76.40,
-    "graduate": "ny3ytk",
-    "sRemarks": "6gsi8a"
+    "nation": "ig26ys",
+    "birthplace": "njfcyj",
+    "political": "l6boys",
+    "address": "562 Larkin Flats， Sukmouth， RI 45584",
+    "code": "59915",
+    "sTelephone": "219.714.9767",
+    "sYear": "1sds18",
+    "dormitory": "ersnfe",
+    "city": "y89hbm",
+    "company": "Schiller and Sons",
+    "pay": 76.05,
+    "graduate": "01kfz9",
+    "sRemarks": "huxhe2"
   }
 ]</code></pre>
                     </div>
@@ -6296,33 +7010,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/delete --data '{
-  "id": "54",
-  "sPwd": "2lfpc8",
-  "clNo": "1t2ovk",
-  "sName": "stephan.considine",
-  "sSex": "fzwo86",
-  "cards": "d4rxjn",
+  "id": "56",
+  "sPwd": "3p6bha",
+  "clNo": "45ktqq",
+  "sName": "halina.streich",
+  "sSex": "x17z8x",
+  "cards": "t0r13b",
   "birthday": "2023-06-13",
-  "nation": "r6dq42",
-  "birthplace": "ba6809",
-  "political": "1ji7mv",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "n8hvi1",
-  "dormitory": "0qp9kn",
-  "city": "iz0sku",
-  "company": "Schinner Inc",
-  "pay": 42.60,
-  "graduate": "ysj9jg",
-  "sRemarks": "jtqji8"
+  "nation": "lzswyc",
+  "birthplace": "mvrues",
+  "political": "cnpi34",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "30kzck",
+  "dormitory": "7jcepj",
+  "city": "p12yw9",
+  "company": "Schiller and Sons",
+  "pay": 21.20,
+  "graduate": "55uirj",
+  "sRemarks": "qjkrdn"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">904</code></pre>
+                        <pre><code class="json">173</code></pre>
                     </div>
                 </div>
             </div>
@@ -6545,33 +7259,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/add --data '{
-  "id": "54",
-  "sPwd": "mbxwi6",
-  "clNo": "k83vbo",
-  "sName": "stephan.considine",
-  "sSex": "zbczxs",
-  "cards": "4fecei",
+  "id": "56",
+  "sPwd": "ybrdjp",
+  "clNo": "pa4rwi",
+  "sName": "halina.streich",
+  "sSex": "vbhajr",
+  "cards": "xggf66",
   "birthday": "2023-06-13",
-  "nation": "ny78lg",
-  "birthplace": "e6nkul",
-  "political": "x7bh81",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "i296uc",
-  "dormitory": "fu070r",
-  "city": "21s2wt",
-  "company": "Schinner Inc",
-  "pay": 59.71,
-  "graduate": "bifqnw",
-  "sRemarks": "5r58pw"
+  "nation": "w2jky3",
+  "birthplace": "1fme09",
+  "political": "d03dz3",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "123gh5",
+  "dormitory": "8khsbe",
+  "city": "f6onxm",
+  "company": "Schiller and Sons",
+  "pay": 50.25,
+  "graduate": "nnx97e",
+  "sRemarks": "zv16k0"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">808</code></pre>
+                        <pre><code class="json">443</code></pre>
                     </div>
                 </div>
             </div>
@@ -6794,33 +7508,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/update --data '{
-  "id": "54",
-  "sPwd": "oyorif",
-  "clNo": "1gbl0y",
-  "sName": "stephan.considine",
-  "sSex": "ok7y6m",
-  "cards": "oblutx",
+  "id": "56",
+  "sPwd": "8a1s4w",
+  "clNo": "ak3q7z",
+  "sName": "halina.streich",
+  "sSex": "sxzskj",
+  "cards": "mk2vj3",
   "birthday": "2023-06-13",
-  "nation": "m7hgrk",
-  "birthplace": "xjp0u7",
-  "political": "d4qi4l",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "q6cemj",
-  "dormitory": "jz5fav",
-  "city": "1e9nzi",
-  "company": "Schinner Inc",
-  "pay": 37.12,
-  "graduate": "4ykszw",
-  "sRemarks": "6pmrtf"
+  "nation": "qlc8w9",
+  "birthplace": "4hezxl",
+  "political": "fg9bft",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "2kg7f8",
+  "dormitory": "fmn63u",
+  "city": "hjkbll",
+  "company": "Schiller and Sons",
+  "pay": 66.44,
+  "graduate": "p9bo9u",
+  "sRemarks": "lfaozo"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">630</code></pre>
+                        <pre><code class="json">724</code></pre>
                     </div>
                 </div>
             </div>
@@ -7043,26 +7757,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/login --data '{
-  "id": "54",
-  "sPwd": "pce797",
-  "clNo": "f4yrxg",
-  "sName": "stephan.considine",
-  "sSex": "megcbb",
-  "cards": "ctlb6b",
+  "id": "56",
+  "sPwd": "4kl4fo",
+  "clNo": "b5lode",
+  "sName": "halina.streich",
+  "sSex": "fkpqr6",
+  "cards": "3rau6g",
   "birthday": "2023-06-13",
-  "nation": "esbk7n",
-  "birthplace": "dmn8pi",
-  "political": "4vg76u",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "p8n19t",
-  "dormitory": "psvb1z",
-  "city": "vuxcu3",
-  "company": "Schinner Inc",
-  "pay": 35.97,
-  "graduate": "bbhyiz",
-  "sRemarks": "3xeog4"
+  "nation": "q8dvpw",
+  "birthplace": "jcaool",
+  "political": "ehm66w",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "1y0s35",
+  "dormitory": "g8gqyi",
+  "city": "px9fgt",
+  "company": "Schiller and Sons",
+  "pay": 64.78,
+  "graduate": "ocvicv",
+  "sRemarks": "zir90j"
 }'</code></pre>
                     </div>
                 </div>
@@ -7248,27 +7962,87 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "id": "54",
-  "sPwd": "kamcul",
-  "clNo": "qc6s7g",
-  "sName": "stephan.considine",
-  "sSex": "u1kt6e",
-  "cards": "591u1q",
+  "id": "56",
+  "sPwd": "l9t4po",
+  "clNo": "in21dg",
+  "sName": "halina.streich",
+  "sSex": "tnn8yl",
+  "cards": "0xfy8j",
   "birthday": "2023-06-13",
-  "nation": "vdxuna",
-  "birthplace": "l9dzxe",
-  "political": "9f2p4w",
-  "address": "Suite 345 917 Dwight Valley， Stevenbury， ND 98973",
-  "code": "76438",
-  "sTelephone": "1-857-947-6702",
-  "sYear": "niv02n",
-  "dormitory": "m20c5h",
-  "city": "y4iwz9",
-  "company": "Schinner Inc",
-  "pay": 68.56,
-  "graduate": "z9dmls",
-  "sRemarks": "401p1n"
+  "nation": "74bxuj",
+  "birthplace": "riqjho",
+  "political": "e2ir7o",
+  "address": "562 Larkin Flats， Sukmouth， RI 45584",
+  "code": "59915",
+  "sTelephone": "219.714.9767",
+  "sYear": "ledl7a",
+  "dormitory": "0ub00k",
+  "city": "0uqqgg",
+  "company": "Schiller and Sons",
+  "pay": 11.02,
+  "graduate": "q5hjco",
+  "sRemarks": "rn4jxz"
 }</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="3c78bf6d36c009b69883f7f825397d15"><h3 id="_1_6_10_通过id批量删除"><a
+                    class="anchor" href="#_1_6_10_通过id批量删除"></a><a class="link"
+                                                                                        href="#_1_6_10_通过id批量删除">6.10.通过id批量删除</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/student/deletelist"
+                     id="3c78bf6d36c009b69883f7f825397d15-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/student/deletelist">http://localhost:8080/student/deletelist</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="3c78bf6d36c009b69883f7f825397d15-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="3c78bf6d36c009b69883f7f825397d15-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过id批量删除</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">ids</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">array</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            No comments found.,[array of string]</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/deletelist --data '[
+  "dekwpu",
+  "4t9kdt"
+]'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">901</code></pre>
                     </div>
                 </div>
             </div>
@@ -7378,13 +8152,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 814,
-    "cNo": "gorkxu",
-    "tNo": "6n938m",
-    "yearterm": "65u8x1",
-    "cycles": "r21x5t",
-    "festival": "hc2t3f",
-    "classroom": "x8ya19"
+    "id": 188,
+    "cNo": "ghyzyt",
+    "tNo": "079bfj",
+    "yearterm": "ohexhx",
+    "cycles": "4ochna",
+    "festival": "ek4kz7",
+    "classroom": "fkyfj7"
   }
 ]</code></pre>
                     </div>
@@ -7492,13 +8266,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/id --data '{
-  "id": 317,
-  "cNo": "3qm1lo",
-  "tNo": "ikmlvg",
-  "yearterm": "gakq1m",
-  "cycles": "eo0aav",
-  "festival": "yl9j20",
-  "classroom": "7apzvy"
+  "id": 3,
+  "cNo": "4ccfb5",
+  "tNo": "d5xdrf",
+  "yearterm": "w7dqa8",
+  "cycles": "jqoqd0",
+  "festival": "veh9tu",
+  "classroom": "9i3epe"
 }'</code></pre>
                     </div>
                 </div>
@@ -7579,15 +8353,17 @@
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">{
-  "id": 960,
-  "cNo": "6y2a6b",
-  "tNo": "qskwax",
-  "yearterm": "oc664t",
-  "cycles": "v7j041",
-  "festival": "ys7zik",
-  "classroom": "f38pk4"
-}</code></pre>
+                        <pre><code class="json">[
+  {
+    "id": 352,
+    "cNo": "yzls26",
+    "tNo": "7pvp56",
+    "yearterm": "uobwtl",
+    "cycles": "0ztlb3",
+    "festival": "rkw9h7",
+    "classroom": "2728re"
+  }
+]</code></pre>
                     </div>
                 </div>
             </div>
@@ -7693,20 +8469,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/delete --data '{
-  "id": 519,
-  "cNo": "us8d8x",
-  "tNo": "obwvvu",
-  "yearterm": "hlk6l0",
-  "cycles": "ei5kta",
-  "festival": "8ewrsi",
-  "classroom": "t7my6b"
+  "id": 502,
+  "cNo": "ezh6pk",
+  "tNo": "gqsvuu",
+  "yearterm": "3nten3",
+  "cycles": "me6psk",
+  "festival": "ik6lsw",
+  "classroom": "euqhz5"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">98</code></pre>
+                        <pre><code class="json">641</code></pre>
                     </div>
                 </div>
             </div>
@@ -7812,20 +8588,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/add --data '{
-  "id": 421,
-  "cNo": "ay55c5",
-  "tNo": "d282zr",
-  "yearterm": "6v8i3o",
-  "cycles": "yeaefp",
-  "festival": "6o30i0",
-  "classroom": "i016ps"
+  "id": 817,
+  "cNo": "x1mhzm",
+  "tNo": "cvrnxs",
+  "yearterm": "03lphn",
+  "cycles": "kl791j",
+  "festival": "jgausg",
+  "classroom": "zpcv0u"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">555</code></pre>
+                        <pre><code class="json">199</code></pre>
                     </div>
                 </div>
             </div>
@@ -7931,20 +8707,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/update --data '{
-  "id": 768,
-  "cNo": "yu84ea",
-  "tNo": "2s0dk5",
-  "yearterm": "ujjn80",
-  "cycles": "mj4ll2",
-  "festival": "onuqsi",
-  "classroom": "8p3mik"
+  "id": 712,
+  "cNo": "3sww9g",
+  "tNo": "z4ookf",
+  "yearterm": "pkrclk",
+  "cycles": "am9ytj",
+  "festival": "q3gdwx",
+  "classroom": "03a1g7"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">549</code></pre>
+                        <pre><code class="json">783</code></pre>
                     </div>
                 </div>
             </div>
@@ -8054,13 +8830,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "tPwd": "n8l9iz",
-    "tName": "stephan.considine",
-    "tSex": "2ed35n",
-    "email": "jessica.berge@yahoo.com",
-    "tTelephone": "1-857-947-6702",
-    "tRemarks": "gf57nj"
+    "id": "56",
+    "tPwd": "y437mt",
+    "tName": "halina.streich",
+    "tSex": "y48w54",
+    "email": "franklin.reilly@hotmail.com",
+    "tTelephone": "219.714.9767",
+    "tRemarks": "c20rgq"
   }
 ]</code></pre>
                     </div>
@@ -8168,13 +8944,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/id --data '{
-  "id": "54",
-  "tPwd": "o8l4y3",
-  "tName": "stephan.considine",
-  "tSex": "1xqjed",
-  "email": "jessica.berge@yahoo.com",
-  "tTelephone": "1-857-947-6702",
-  "tRemarks": "oqxqk0"
+  "id": "56",
+  "tPwd": "is8rhi",
+  "tName": "halina.streich",
+  "tSex": "05udro",
+  "email": "franklin.reilly@hotmail.com",
+  "tTelephone": "219.714.9767",
+  "tRemarks": "iwomr7"
 }'</code></pre>
                     </div>
                 </div>
@@ -8257,13 +9033,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "tPwd": "pqfnh7",
-    "tName": "stephan.considine",
-    "tSex": "3nh0g4",
-    "email": "jessica.berge@yahoo.com",
-    "tTelephone": "1-857-947-6702",
-    "tRemarks": "2imppr"
+    "id": "56",
+    "tPwd": "hhl330",
+    "tName": "halina.streich",
+    "tSex": "oinraa",
+    "email": "franklin.reilly@hotmail.com",
+    "tTelephone": "219.714.9767",
+    "tRemarks": "zko6ok"
   }
 ]</code></pre>
                     </div>
@@ -8371,20 +9147,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/delete --data '{
-  "id": "54",
-  "tPwd": "cigk7j",
-  "tName": "stephan.considine",
-  "tSex": "l9by4x",
-  "email": "jessica.berge@yahoo.com",
-  "tTelephone": "1-857-947-6702",
-  "tRemarks": "g19tzi"
+  "id": "56",
+  "tPwd": "7lqim4",
+  "tName": "halina.streich",
+  "tSex": "r898gj",
+  "email": "franklin.reilly@hotmail.com",
+  "tTelephone": "219.714.9767",
+  "tRemarks": "46bi9r"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">39</code></pre>
+                        <pre><code class="json">151</code></pre>
                     </div>
                 </div>
             </div>
@@ -8490,20 +9266,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/add --data '{
-  "id": "54",
-  "tPwd": "6zcecz",
-  "tName": "stephan.considine",
-  "tSex": "csbky9",
-  "email": "jessica.berge@yahoo.com",
-  "tTelephone": "1-857-947-6702",
-  "tRemarks": "8sjes2"
+  "id": "56",
+  "tPwd": "266i8a",
+  "tName": "halina.streich",
+  "tSex": "s4k5tm",
+  "email": "franklin.reilly@hotmail.com",
+  "tTelephone": "219.714.9767",
+  "tRemarks": "f6s56l"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">827</code></pre>
+                        <pre><code class="json">846</code></pre>
                     </div>
                 </div>
             </div>
@@ -8609,20 +9385,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/update --data '{
-  "id": "54",
-  "tPwd": "1j1ze8",
-  "tName": "stephan.considine",
-  "tSex": "0z3jsg",
-  "email": "jessica.berge@yahoo.com",
-  "tTelephone": "1-857-947-6702",
-  "tRemarks": "7dho7y"
+  "id": "56",
+  "tPwd": "ufzn0t",
+  "tName": "halina.streich",
+  "tSex": "ktek6n",
+  "email": "franklin.reilly@hotmail.com",
+  "tTelephone": "219.714.9767",
+  "tRemarks": "vvo2p4"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">906</code></pre>
+                        <pre><code class="json">757</code></pre>
                     </div>
                 </div>
             </div>
@@ -8728,13 +9504,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/name --data '{
-  "id": "54",
-  "tPwd": "2mjd44",
-  "tName": "stephan.considine",
-  "tSex": "n4c31a",
-  "email": "jessica.berge@yahoo.com",
-  "tTelephone": "1-857-947-6702",
-  "tRemarks": "qhtl8p"
+  "id": "56",
+  "tPwd": "zs0xir",
+  "tName": "halina.streich",
+  "tSex": "m2u63d",
+  "email": "franklin.reilly@hotmail.com",
+  "tTelephone": "219.714.9767",
+  "tRemarks": "nw0lha"
 }'</code></pre>
                     </div>
                 </div>
@@ -8817,15 +9593,75 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "54",
-    "tPwd": "kdvegw",
-    "tName": "stephan.considine",
-    "tSex": "m81vto",
-    "email": "jessica.berge@yahoo.com",
-    "tTelephone": "1-857-947-6702",
-    "tRemarks": "xjyyjj"
+    "id": "56",
+    "tPwd": "6c8n72",
+    "tName": "halina.streich",
+    "tSex": "jho7ue",
+    "email": "franklin.reilly@hotmail.com",
+    "tTelephone": "219.714.9767",
+    "tRemarks": "cxz5cp"
   }
 ]</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="1001eba4c983eb739c1f98a3e59827d7"><h3 id="_1_8_7_通过id批量删除"><a
+                    class="anchor" href="#_1_8_7_通过id批量删除"></a><a class="link"
+                                                                                        href="#_1_8_7_通过id批量删除">8.7.通过id批量删除</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/teacher/deletelist"
+                     id="1001eba4c983eb739c1f98a3e59827d7-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/teacher/deletelist">http://localhost:8080/teacher/deletelist</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="1001eba4c983eb739c1f98a3e59827d7-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="1001eba4c983eb739c1f98a3e59827d7-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过id批量删除</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">ids</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">array</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            No comments found.,[array of string]</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/deletelist --data '[
+  "iqp7yr",
+  "xcf4x7"
+]'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">806</code></pre>
                     </div>
                 </div>
             </div>
@@ -8895,8 +9731,8 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 105,
-    "yearterm": "vaxiof"
+    "id": 79,
+    "yearterm": "f7b8se"
   }
 ]</code></pre>
                     </div>
@@ -8959,8 +9795,8 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/id --data '{
-  "id": 731,
-  "yearterm": "trfk5u"
+  "id": 178,
+  "yearterm": "uqr0bp"
 }'</code></pre>
                     </div>
                 </div>
@@ -9001,10 +9837,12 @@
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">{
-  "id": 37,
-  "yearterm": "pumz8r"
-}</code></pre>
+                        <pre><code class="json">[
+  {
+    "id": 926,
+    "yearterm": "19z7b4"
+  }
+]</code></pre>
                     </div>
                 </div>
             </div>
@@ -9065,15 +9903,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/delete --data '{
-  "id": 679,
-  "yearterm": "pttaj4"
+  "id": 64,
+  "yearterm": "sxd738"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">544</code></pre>
+                        <pre><code class="json">290</code></pre>
                     </div>
                 </div>
             </div>
@@ -9134,15 +9972,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/add --data '{
-  "id": 335,
-  "yearterm": "nqyr6p"
+  "id": 172,
+  "yearterm": "17hwrh"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">743</code></pre>
+                        <pre><code class="json">811</code></pre>
                     </div>
                 </div>
             </div>
@@ -9203,15 +10041,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/update --data '{
-  "id": 357,
-  "yearterm": "yee0t3"
+  "id": 849,
+  "yearterm": "49oiin"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">769</code></pre>
+                        <pre><code class="json">495</code></pre>
                     </div>
                 </div>
             </div>
@@ -9290,7 +10128,7 @@
             </table>
         </div>
     </div>
-    <footer class="page-footer"><span class="copyright">Generated by smart-doc at 2023-06-13 13:07:37</span><span
+    <footer class="page-footer"><span class="copyright">Generated by smart-doc at 2023-06-13 19:11:19</span><span
             class="footer-modification">Suggestions,contact,support and error reporting on<a
             href="https://gitee.com/smart-doc-team/smart-doc" target="_blank">Gitee</a>or<a
             href="https://github.com/smart-doc-group/smart-doc.git" target="_blank">Github</a></span>
@@ -9299,7 +10137,7 @@
                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABlUlEQVRIS+2UvUvDQBiH398Rly4udnARwUXs4qAIOigI4iL30dTZ2T9AcNPVvUsXF7uYttdScNDFRRAnB11cFFwKxcXBJTQnJ6lEbRI/CIiY9e6e5/e+9+ZAGX/ImE9/QKCU2jfGbGTQqq4xZgtSyisiKmQgIAAVCCFWAGxnIOhqrdd/xyUrpRZsP40xSwA6AI57vd5eq9W6T6s8tQIppSKi+gDQNREprfVNkiRRwDlfY4xZ+FAIuSOi8Qjw0nEc5XnebZwkViClXA2T5+xhY8xus9ncEUJMAziITN5FEARuXLsGCoQQywBs8uEovJ+Scz7FGDuMSM4cx3E9z+u8r+SDQEq5SEQ1IhoZBE+QnBKRq7V+iEreCDjn84wxCx9NgidITnK5nFutVh/7e14FSqnZIAhqAMY+A4+TADjyfb/Ubref7J4XQXhxNvnEV+AJlbTy+XypUqn4KBaLBZuciCa/A0+opN5oNFz7FpUBbP4EHicxxsyAcz7HGDvvz3nar5+2Ho5wOQwsU5+KNGDa+r8grUP0DBLjtRtNKEliAAAAAElFTkSuQmCC"><span
             id="upText">Top</span></div>
 </div>
-<script src="search.js?v=1686632857031"></script>
+<script src="search.js?v=1686654679574"></script>
 <script>
     $(function(){const Accordion=function(el,multiple){this.el=el||{};this.multiple=multiple||false;const links=this.el.find(".dd");links.on("click",{el:this.el,multiple:this.multiple},this.dropdown)};Accordion.prototype.dropdown=function(e){const $el=e.data.el;const $this=$(this),$next=$this.next();$next.slideToggle();$this.parent().toggleClass("open");if(!e.data.multiple){$el.find(".submenu").not($next).slideUp("20").parent().removeClass("open")}};new Accordion($("#accordion"),false);hljs.highlightAll();$(window).scroll(function(){if($(window).scrollTop()>100){$("#toTop").fadeIn(1500);$("#toTop").hover(function(){$("#upArrow").hide();$("#upText").show()},function(){$("#upArrow").show();$("#upText").hide()})}else{$("#toTop").fadeOut(1500)}});$("#toTop").click(function(){$("body, html").animate({scrollTop:0},1000);return false})});
 
