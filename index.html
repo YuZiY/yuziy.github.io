@@ -6,7 +6,7 @@
     <meta content="smart-doc" name="generator">
     <title>API Reference</title>
     <link href="font.css" rel="stylesheet">
-    <link href="AllInOne.css?v=1686654679574" rel="stylesheet"/>
+    <link href="AllInOne.css?v=1686737129276" rel="stylesheet"/>
     <style>.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {
         background: #f7f7f8
     }
@@ -139,6 +139,10 @@
 
                     <li><a
                             href="#_1_4_6_通过id批量删除">4.6.通过id批量删除</a>
+                    </li>
+
+                    <li><a
+                            href="#_1_4_7_通过名字查询学生选修及成绩表">4.7.通过名字查询学生选修及成绩表</a>
                     </li>
                 </ul>
             </li>
@@ -319,8 +323,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td class="tableblock halign-left valign-top"><p class="tableblock">v2023-06-13 19:11:19</p></td>
-                    <td class="tableblock halign-left valign-top"><p class="tableblock">2023-06-13 19:11:19</p>
+                    <td class="tableblock halign-left valign-top"><p class="tableblock">v2023-06-14 18:05:29</p></td>
+                    <td class="tableblock halign-left valign-top"><p class="tableblock">2023-06-14 18:05:29</p>
                     </td>
                     <td class="tableblock halign-left valign-top"><p class="tableblock">auto</p></td>
                     <td class="tableblock halign-left valign-top"><p class="tableblock">@A</p></td>
@@ -426,12 +430,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 498,
+    "id": 1,
     "adminName": "admin01",
-    "pwd": "48y9zg",
-    "aName": "halina.streich",
-    "email": "franklin.reilly@hotmail.com",
-    "telephone": "219.714.9767"
+    "pwd": "123456",
+    "aName": "张三",
+    "email": "email.@qq.com",
+    "telephone": "13200000000"
   }
 ]</code></pre>
                     </div>
@@ -530,12 +534,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/id --data '{
-  "id": 311,
+  "id": 1,
   "adminName": "admin01",
-  "pwd": "efng2q",
-  "aName": "halina.streich",
-  "email": "franklin.reilly@hotmail.com",
-  "telephone": "219.714.9767"
+  "pwd": "123456",
+  "aName": "张三",
+  "email": "email.@qq.com",
+  "telephone": "13200000000"
 }'</code></pre>
                     </div>
                 </div>
@@ -610,12 +614,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 620,
+    "id": 1,
     "adminName": "admin01",
-    "pwd": "599klc",
-    "aName": "halina.streich",
-    "email": "franklin.reilly@hotmail.com",
-    "telephone": "219.714.9767"
+    "pwd": "123456",
+    "aName": "张三",
+    "email": "email.@qq.com",
+    "telephone": "13200000000"
   }
 ]</code></pre>
                     </div>
@@ -714,19 +718,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/delete --data '{
-  "id": 335,
+  "id": 1,
   "adminName": "admin01",
-  "pwd": "uvaldh",
-  "aName": "halina.streich",
-  "email": "franklin.reilly@hotmail.com",
-  "telephone": "219.714.9767"
+  "pwd": "123456",
+  "aName": "张三",
+  "email": "email.@qq.com",
+  "telephone": "13200000000"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">123</code></pre>
+                        <pre><code class="json">4</code></pre>
                     </div>
                 </div>
             </div>
@@ -823,19 +827,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/add --data '{
-  "id": 848,
+  "id": 1,
   "adminName": "admin01",
-  "pwd": "vjlsg5",
-  "aName": "halina.streich",
-  "email": "franklin.reilly@hotmail.com",
-  "telephone": "219.714.9767"
+  "pwd": "123456",
+  "aName": "张三",
+  "email": "email.@qq.com",
+  "telephone": "13200000000"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">215</code></pre>
+                        <pre><code class="json">262</code></pre>
                     </div>
                 </div>
             </div>
@@ -932,19 +936,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/update --data '{
-  "id": 554,
+  "id": 1,
   "adminName": "admin01",
-  "pwd": "6zlfd0",
-  "aName": "halina.streich",
-  "email": "franklin.reilly@hotmail.com",
-  "telephone": "219.714.9767"
+  "pwd": "123456",
+  "aName": "张三",
+  "email": "email.@qq.com",
+  "telephone": "13200000000"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">233</code></pre>
+                        <pre><code class="json">896</code></pre>
                     </div>
                 </div>
             </div>
@@ -1041,19 +1045,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/login --data '{
-  "id": 68,
+  "id": 1,
   "adminName": "admin01",
-  "pwd": "r5umpl",
-  "aName": "halina.streich",
-  "email": "franklin.reilly@hotmail.com",
-  "telephone": "219.714.9767"
+  "pwd": "123456",
+  "aName": "张三",
+  "email": "email.@qq.com",
+  "telephone": "13200000000"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">648</code></pre>
+                        <pre><code class="json">645</code></pre>
                     </div>
                 </div>
             </div>
@@ -1105,15 +1109,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/admin/deletelist --data '[
-  "hffxhd",
-  "lkqjy4"
+  "duuust",
+  "3uyyi3"
 ]'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">881</code></pre>
+                        <pre><code class="json">318</code></pre>
                     </div>
                 </div>
             </div>
@@ -1215,12 +1219,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "clName": "halina.streich",
-    "faculty": "wjml0t",
-    "professional": "hpbwfv",
-    "number": 493,
-    "counselor": "vu3xq5"
+    "id": "1",
+    "clName": "20计科3班",
+    "faculty": "计算机系",
+    "professional": "计算机科学与技术",
+    "number": 63,
+    "counselor": "李四"
   }
 ]</code></pre>
                     </div>
@@ -1319,12 +1323,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/id --data '{
-  "id": "56",
-  "clName": "halina.streich",
-  "faculty": "ua257z",
-  "professional": "urjw79",
-  "number": 832,
-  "counselor": "7mkk49"
+  "id": "1",
+  "clName": "20计科3班",
+  "faculty": "计算机系",
+  "professional": "计算机科学与技术",
+  "number": 63,
+  "counselor": "李四"
 }'</code></pre>
                     </div>
                 </div>
@@ -1399,12 +1403,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "clName": "halina.streich",
-    "faculty": "yybw1d",
-    "professional": "90bve7",
-    "number": 675,
-    "counselor": "n0t8ib"
+    "id": "1",
+    "clName": "20计科3班",
+    "faculty": "计算机系",
+    "professional": "计算机科学与技术",
+    "number": 63,
+    "counselor": "李四"
   }
 ]</code></pre>
                     </div>
@@ -1503,19 +1507,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/delete --data '{
-  "id": "56",
-  "clName": "halina.streich",
-  "faculty": "cmleja",
-  "professional": "kz51ie",
-  "number": 729,
-  "counselor": "7e9j4c"
+  "id": "1",
+  "clName": "20计科3班",
+  "faculty": "计算机系",
+  "professional": "计算机科学与技术",
+  "number": 63,
+  "counselor": "李四"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">119</code></pre>
+                        <pre><code class="json">749</code></pre>
                     </div>
                 </div>
             </div>
@@ -1612,19 +1616,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/add --data '{
-  "id": "56",
-  "clName": "halina.streich",
-  "faculty": "teupc1",
-  "professional": "vsbjgb",
-  "number": 860,
-  "counselor": "lqk6c2"
+  "id": "1",
+  "clName": "20计科3班",
+  "faculty": "计算机系",
+  "professional": "计算机科学与技术",
+  "number": 63,
+  "counselor": "李四"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">188</code></pre>
+                        <pre><code class="json">648</code></pre>
                     </div>
                 </div>
             </div>
@@ -1721,19 +1725,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/update --data '{
-  "id": "56",
-  "clName": "halina.streich",
-  "faculty": "fnr9e7",
-  "professional": "42f3gq",
-  "number": 202,
-  "counselor": "8ubtep"
+  "id": "1",
+  "clName": "20计科3班",
+  "faculty": "计算机系",
+  "professional": "计算机科学与技术",
+  "number": 63,
+  "counselor": "李四"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">846</code></pre>
+                        <pre><code class="json">145</code></pre>
                     </div>
                 </div>
             </div>
@@ -1830,12 +1834,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/name --data '{
-  "id": "56",
-  "clName": "halina.streich",
-  "faculty": "3f1oqu",
-  "professional": "518ai1",
-  "number": 524,
-  "counselor": "7281vs"
+  "id": "1",
+  "clName": "20计科3班",
+  "faculty": "计算机系",
+  "professional": "计算机科学与技术",
+  "number": 63,
+  "counselor": "李四"
 }'</code></pre>
                     </div>
                 </div>
@@ -1910,12 +1914,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "clName": "halina.streich",
-    "faculty": "a8g0rt",
-    "professional": "bosqnq",
-    "number": 179,
-    "counselor": "41mc3t"
+    "id": "1",
+    "clName": "20计科3班",
+    "faculty": "计算机系",
+    "professional": "计算机科学与技术",
+    "number": 63,
+    "counselor": "李四"
   }
 ]</code></pre>
                     </div>
@@ -1969,15 +1973,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/class/deletelist --data '[
-  "mmdjge",
-  "ohnxz0"
+  "p1tt4x",
+  "t1zwqi"
 ]'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">34</code></pre>
+                        <pre><code class="json">722</code></pre>
                     </div>
                 </div>
             </div>
@@ -2079,12 +2083,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "cName": "halina.streich",
-    "type": "pqvv90",
-    "unit": "nb2j0w",
-    "hours": "t0clgg",
-    "testmode": "xk4rw4"
+    "id": "C0001",
+    "cName": "信息分析与设计",
+    "type": "选修课",
+    "unit": "2",
+    "hours": "72",
+    "testmode": "大作业"
   }
 ]</code></pre>
                     </div>
@@ -2183,12 +2187,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/id --data '{
-  "id": "56",
-  "cName": "halina.streich",
-  "type": "gse03v",
-  "unit": "842c62",
-  "hours": "zc15b0",
-  "testmode": "8o53t2"
+  "id": "C0001",
+  "cName": "信息分析与设计",
+  "type": "选修课",
+  "unit": "2",
+  "hours": "72",
+  "testmode": "大作业"
 }'</code></pre>
                     </div>
                 </div>
@@ -2263,12 +2267,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "cName": "halina.streich",
-    "type": "cijezl",
-    "unit": "1f9qe7",
-    "hours": "8pr93b",
-    "testmode": "qhf4x2"
+    "id": "C0001",
+    "cName": "信息分析与设计",
+    "type": "选修课",
+    "unit": "2",
+    "hours": "72",
+    "testmode": "大作业"
   }
 ]</code></pre>
                     </div>
@@ -2367,19 +2371,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/delete --data '{
-  "id": "56",
-  "cName": "halina.streich",
-  "type": "tyt0nm",
-  "unit": "b31a7h",
-  "hours": "kt8s2s",
-  "testmode": "dk7a2a"
+  "id": "C0001",
+  "cName": "信息分析与设计",
+  "type": "选修课",
+  "unit": "2",
+  "hours": "72",
+  "testmode": "大作业"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">959</code></pre>
+                        <pre><code class="json">669</code></pre>
                     </div>
                 </div>
             </div>
@@ -2476,19 +2480,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/add --data '{
-  "id": "56",
-  "cName": "halina.streich",
-  "type": "21b1a1",
-  "unit": "ku2d7t",
-  "hours": "9t6ira",
-  "testmode": "epzigz"
+  "id": "C0001",
+  "cName": "信息分析与设计",
+  "type": "选修课",
+  "unit": "2",
+  "hours": "72",
+  "testmode": "大作业"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">282</code></pre>
+                        <pre><code class="json">180</code></pre>
                     </div>
                 </div>
             </div>
@@ -2585,19 +2589,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/update --data '{
-  "id": "56",
-  "cName": "halina.streich",
-  "type": "i5jpwi",
-  "unit": "okw76r",
-  "hours": "e06bll",
-  "testmode": "ae1pd7"
+  "id": "C0001",
+  "cName": "信息分析与设计",
+  "type": "选修课",
+  "unit": "2",
+  "hours": "72",
+  "testmode": "大作业"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">8</code></pre>
+                        <pre><code class="json">516</code></pre>
                     </div>
                 </div>
             </div>
@@ -2694,12 +2698,12 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/name --data '{
-  "id": "56",
-  "cName": "halina.streich",
-  "type": "otnfjw",
-  "unit": "3k39c8",
-  "hours": "n18wza",
-  "testmode": "7o726e"
+  "id": "C0001",
+  "cName": "信息分析与设计",
+  "type": "选修课",
+  "unit": "2",
+  "hours": "72",
+  "testmode": "大作业"
 }'</code></pre>
                     </div>
                 </div>
@@ -2774,12 +2778,12 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "cName": "halina.streich",
-    "type": "f1rbc5",
-    "unit": "u6p27h",
-    "hours": "awdwmo",
-    "testmode": "nembem"
+    "id": "C0001",
+    "cName": "信息分析与设计",
+    "type": "选修课",
+    "unit": "2",
+    "hours": "72",
+    "testmode": "大作业"
   }
 ]</code></pre>
                     </div>
@@ -2833,15 +2837,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/course/deletelist --data '[
-  "xz5f9v",
-  "wox46y"
+  "zieoox",
+  "bpbg23"
 ]'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">537</code></pre>
+                        <pre><code class="json">602</code></pre>
                     </div>
                 </div>
             </div>
@@ -2906,10 +2910,26 @@
                     </tr>
 
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
 
@@ -2983,17 +3003,19 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 98,
-    "sNo": "43uhsf",
-    "tId": 881,
-    "round": "nrwd7n",
-    "tEsttime": "2023-06-13 19:11:21",
-    "tEstsite": "aao8ns",
-    "sEat": "mu24y9",
-    "uScore": 292,
-    "eScore": 300,
-    "tScore": 963,
-    "eRemarks": "27yaek"
+    "id": 1,
+    "sNo": "20200404430301",
+    "sName": "张三",
+    "tId": "C001",
+    "cName": "信息系统分析与设计",
+    "round": "1",
+    "tEsttime": "2023年6月14日",
+    "tEstsite": "11栋502",
+    "sEat": "1",
+    "uScore": 80,
+    "eScore": 80,
+    "tScore": 85,
+    "eRemarks": "无"
   }
 ]</code></pre>
                     </div>
@@ -3052,10 +3074,28 @@
                     </tr>
 
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -3137,17 +3177,19 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/id --data '{
-  "id": 548,
-  "sNo": "6wpprn",
-  "tId": 333,
-  "round": "4xkdrr",
-  "tEsttime": "2023-06-13 19:11:21",
-  "tEstsite": "86h1hx",
-  "sEat": "ci1iip",
-  "uScore": 430,
-  "eScore": 471,
-  "tScore": 888,
-  "eRemarks": "09ms7i"
+  "id": 1,
+  "sNo": "20200404430301",
+  "sName": "张三",
+  "tId": "C001",
+  "cName": "信息系统分析与设计",
+  "round": "1",
+  "tEsttime": "2023年6月14日",
+  "tEstsite": "11栋502",
+  "sEat": "1",
+  "uScore": 80,
+  "eScore": 80,
+  "tScore": 85,
+  "eRemarks": "无"
 }'</code></pre>
                     </div>
                 </div>
@@ -3185,10 +3227,26 @@
                     </tr>
 
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
 
@@ -3262,17 +3320,19 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 974,
-    "sNo": "m2e8kh",
-    "tId": 590,
-    "round": "l8pi0v",
-    "tEsttime": "2023-06-13 19:11:21",
-    "tEstsite": "fo276j",
-    "sEat": "3h27g6",
-    "uScore": 754,
-    "eScore": 219,
-    "tScore": 956,
-    "eRemarks": "rm6oj7"
+    "id": 1,
+    "sNo": "20200404430301",
+    "sName": "张三",
+    "tId": "C001",
+    "cName": "信息系统分析与设计",
+    "round": "1",
+    "tEsttime": "2023年6月14日",
+    "tEstsite": "11栋502",
+    "sEat": "1",
+    "uScore": 80,
+    "eScore": 80,
+    "tScore": 85,
+    "eRemarks": "无"
   }
 ]</code></pre>
                     </div>
@@ -3331,10 +3391,28 @@
                     </tr>
 
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -3416,24 +3494,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/delete --data '{
-  "id": 330,
-  "sNo": "fhtcj4",
-  "tId": 668,
-  "round": "0nih7v",
-  "tEsttime": "2023-06-13 19:11:21",
-  "tEstsite": "deza65",
-  "sEat": "buhekl",
-  "uScore": 854,
-  "eScore": 166,
-  "tScore": 345,
-  "eRemarks": "v7gznv"
+  "id": 1,
+  "sNo": "20200404430301",
+  "sName": "张三",
+  "tId": "C001",
+  "cName": "信息系统分析与设计",
+  "round": "1",
+  "tEsttime": "2023年6月14日",
+  "tEstsite": "11栋502",
+  "sEat": "1",
+  "uScore": 80,
+  "eScore": 80,
+  "tScore": 85,
+  "eRemarks": "无"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">229</code></pre>
+                        <pre><code class="json">95</code></pre>
                     </div>
                 </div>
             </div>
@@ -3490,10 +3570,28 @@
                     </tr>
 
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -3575,24 +3673,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/add --data '{
-  "id": 960,
-  "sNo": "ofg12m",
-  "tId": 215,
-  "round": "m3aobc",
-  "tEsttime": "2023-06-13 19:11:21",
-  "tEstsite": "m96339",
-  "sEat": "hw4ler",
-  "uScore": 624,
-  "eScore": 291,
-  "tScore": 717,
-  "eRemarks": "t4ejl9"
+  "id": 1,
+  "sNo": "20200404430301",
+  "sName": "张三",
+  "tId": "C001",
+  "cName": "信息系统分析与设计",
+  "round": "1",
+  "tEsttime": "2023年6月14日",
+  "tEstsite": "11栋502",
+  "sEat": "1",
+  "uScore": 80,
+  "eScore": 80,
+  "tScore": 85,
+  "eRemarks": "无"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">608</code></pre>
+                        <pre><code class="json">241</code></pre>
                     </div>
                 </div>
             </div>
@@ -3649,10 +3749,28 @@
                     </tr>
 
                     <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
                             授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -3734,24 +3852,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/update --data '{
-  "id": 30,
-  "sNo": "kh8u9p",
-  "tId": 157,
-  "round": "fos2qt",
-  "tEsttime": "2023-06-13 19:11:21",
-  "tEstsite": "1u5sqv",
-  "sEat": "zucbuf",
-  "uScore": 369,
-  "eScore": 126,
-  "tScore": 441,
-  "eRemarks": "kyv1t3"
+  "id": 1,
+  "sNo": "20200404430301",
+  "sName": "张三",
+  "tId": "C001",
+  "cName": "信息系统分析与设计",
+  "round": "1",
+  "tEsttime": "2023年6月14日",
+  "tEstsite": "11栋502",
+  "sEat": "1",
+  "uScore": 80,
+  "eScore": 80,
+  "tScore": 85,
+  "eRemarks": "无"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">178</code></pre>
+                        <pre><code class="json">273</code></pre>
                     </div>
                 </div>
             </div>
@@ -3803,15 +3923,332 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/deletelist --data '[
-  "ybs68p",
-  "nhg81a"
+  "qizkx7",
+  "dkdbtn"
 ]'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">341</code></pre>
+                        <pre><code class="json">417</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sect2" id="7610e183738befa3a026e8fb85b44379"><h3 id="_1_4_7_通过名字查询学生选修及成绩表"><a
+                    class="anchor" href="#_1_4_7_通过名字查询学生选修及成绩表"></a><a class="link"
+                                                                                        href="#_1_4_7_通过名字查询学生选修及成绩表">4.7.通过名字查询学生选修及成绩表</a>
+            </h3>
+                <div class="paragraph" data-download="false" data-page="" data-url="http://localhost:8080/elective/name"
+                     id="7610e183738befa3a026e8fb85b44379-url"><p><strong>URL:</strong><a class="bare"
+                                                                         href="http://localhost:8080/elective/name">http://localhost:8080/elective/name</a></p>
+                </div>
+                <div class="paragraph" data-method="POST" id="7610e183738befa3a026e8fb85b44379-method"><p><strong>Type:</strong>POST
+                </p></div>
+                <div class="paragraph"><p><strong>Author:</strong>laoxue</p></div>
+                <div class="paragraph" data-content-type="application/json; charset=utf-8" id="7610e183738befa3a026e8fb85b44379-content-type"><p>
+                    <strong>Content-Type:</strong>application/json; charset=utf-8</p></div>
+                <div class="paragraph"><p><strong>Description:</strong>通过名字查询学生选修及成绩表</p></div>
+                <div class="paragraph"><p><strong>Body-parameters:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Parameter</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Required</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            选修序号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">round</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试轮次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEsttime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEstsite</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试地点</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sEat</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            座位号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">uScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            平时成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            综合成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Request-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/elective/name --data '{
+  "id": 1,
+  "sNo": "20200404430301",
+  "sName": "张三",
+  "tId": "C001",
+  "cName": "信息系统分析与设计",
+  "round": "1",
+  "tEsttime": "2023年6月14日",
+  "tEstsite": "11栋502",
+  "sEat": "1",
+  "uScore": 80,
+  "eScore": 80,
+  "tScore": 85,
+  "eRemarks": "无"
+}'</code></pre>
+                    </div>
+                </div>
+                <div class="paragraph"><p><strong>Response-fields:</strong></p></div>
+                <table class="tableblock frame-all grid-all spread">
+                    <colgroup>
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="tableblock halign-left valign-top">Field</th>
+                        <th class="tableblock halign-left valign-top">Type</th>
+                        <th class="tableblock halign-left valign-top">Description</th>
+                        <th class="tableblock halign-left valign-top">Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            选修序号（主键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sNo</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            学生姓名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tId</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            授课序号（外键）</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">cName</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            课程名</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">round</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试轮次</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEsttime</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试时间</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tEstsite</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试地点</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">sEat</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            座位号</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">uScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            平时成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            考试成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">tScore</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">int32</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            综合成绩</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">eRemarks</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">
+                            备注</p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paragraph"><p><strong>Response-example:</strong></p></div>
+                <div class="listingblock">
+                    <div class="content">
+                        <pre><code class="json">[
+  {
+    "id": 1,
+    "sNo": "20200404430301",
+    "sName": "张三",
+    "tId": "C001",
+    "cName": "信息系统分析与设计",
+    "round": "1",
+    "tEsttime": "2023年6月14日",
+    "tEstsite": "11栋502",
+    "sEat": "1",
+    "uScore": 80,
+    "eScore": 80,
+    "tScore": 85,
+    "eRemarks": "无"
+  }
+]</code></pre>
                     </div>
                 </div>
             </div>
@@ -3887,7 +4324,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
 
@@ -3921,13 +4358,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "student": "ks28ky",
-    "startTime": "2023-06-13 19:11:21",
-    "endTime": "2023-06-13 19:11:21",
-    "leaveType": "netnub",
-    "remark": "pj53z2",
-    "approval": "7gzh46"
+    "id": "1",
+    "student": "张三",
+    "startTime": "2023-6-14 17:55:29",
+    "endTime": "2023-06-14 18:05:31",
+    "leaveType": "病假",
+    "remark": "看病",
+    "approval": "1"
   }
 ]</code></pre>
                     </div>
@@ -3998,7 +4435,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4035,13 +4472,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/id --data '{
-  "id": "56",
-  "student": "dxu7vc",
-  "startTime": "2023-06-13 19:11:21",
-  "endTime": "2023-06-13 19:11:21",
-  "leaveType": "ttbfyj",
-  "remark": "nh3hx1",
-  "approval": "163x6l"
+  "id": "1",
+  "student": "张三",
+  "startTime": "2023-6-14 17:55:29",
+  "endTime": "2023-06-14 18:05:31",
+  "leaveType": "病假",
+  "remark": "看病",
+  "approval": "1"
 }'</code></pre>
                     </div>
                 </div>
@@ -4090,7 +4527,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
 
@@ -4124,13 +4561,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "student": "hwv3s0",
-    "startTime": "2023-06-13 19:11:21",
-    "endTime": "2023-06-13 19:11:21",
-    "leaveType": "rcqwcj",
-    "remark": "dzqyn0",
-    "approval": "ef6ry9"
+    "id": "1",
+    "student": "张三",
+    "startTime": "2023-6-14 17:55:29",
+    "endTime": "2023-06-14 18:05:31",
+    "leaveType": "病假",
+    "remark": "看病",
+    "approval": "1"
   }
 ]</code></pre>
                     </div>
@@ -4201,7 +4638,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4238,13 +4675,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/name --data '{
-  "id": "56",
-  "student": "cspf8i",
-  "startTime": "2023-06-13 19:11:21",
-  "endTime": "2023-06-13 19:11:21",
-  "leaveType": "iwfhy8",
-  "remark": "xq34ke",
-  "approval": "ljchnk"
+  "id": "1",
+  "student": "张三",
+  "startTime": "2023-6-14 17:55:29",
+  "endTime": "2023-06-14 18:05:31",
+  "leaveType": "病假",
+  "remark": "看病",
+  "approval": "1"
 }'</code></pre>
                     </div>
                 </div>
@@ -4293,7 +4730,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
 
@@ -4327,13 +4764,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "student": "364s8n",
-    "startTime": "2023-06-13 19:11:21",
-    "endTime": "2023-06-13 19:11:21",
-    "leaveType": "xc8pc3",
-    "remark": "2dewke",
-    "approval": "uwovsz"
+    "id": "1",
+    "student": "张三",
+    "startTime": "2023-6-14 17:55:29",
+    "endTime": "2023-06-14 18:05:31",
+    "leaveType": "病假",
+    "remark": "看病",
+    "approval": "1"
   }
 ]</code></pre>
                     </div>
@@ -4404,7 +4841,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4441,20 +4878,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/delete --data '{
-  "id": "56",
-  "student": "snjvv1",
-  "startTime": "2023-06-13 19:11:21",
-  "endTime": "2023-06-13 19:11:21",
-  "leaveType": "3d589e",
-  "remark": "iyo3no",
-  "approval": "ypq5lv"
+  "id": "1",
+  "student": "张三",
+  "startTime": "2023-6-14 17:55:29",
+  "endTime": "2023-06-14 18:05:31",
+  "leaveType": "病假",
+  "remark": "看病",
+  "approval": "1"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">366</code></pre>
+                        <pre><code class="json">968</code></pre>
                     </div>
                 </div>
             </div>
@@ -4523,7 +4960,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4560,20 +4997,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/add --data '{
-  "id": "56",
-  "student": "5pmvkd",
-  "startTime": "2023-06-13 19:11:21",
-  "endTime": "2023-06-13 19:11:21",
-  "leaveType": "xyrsqz",
-  "remark": "myqwz7",
-  "approval": "te07e6"
+  "id": "1",
+  "student": "张三",
+  "startTime": "2023-6-14 17:55:29",
+  "endTime": "2023-06-14 18:05:31",
+  "leaveType": "病假",
+  "remark": "看病",
+  "approval": "1"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">169</code></pre>
+                        <pre><code class="json">243</code></pre>
                     </div>
                 </div>
             </div>
@@ -4642,7 +5079,7 @@
                         <td class="tableblock halign-left valign-top"><p class="tableblock">endTime</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">
-                            结束时间</p></td>
+                            结束时间 2023-6-14 20:55:34</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
                     </tr>
@@ -4679,20 +5116,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/update --data '{
-  "id": "56",
-  "student": "na0qq4",
-  "startTime": "2023-06-13 19:11:21",
-  "endTime": "2023-06-13 19:11:21",
-  "leaveType": "a7sh9x",
-  "remark": "hi007l",
-  "approval": "45w2ev"
+  "id": "1",
+  "student": "张三",
+  "startTime": "2023-6-14 17:55:29",
+  "endTime": "2023-06-14 18:05:31",
+  "leaveType": "病假",
+  "remark": "看病",
+  "approval": "1"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">363</code></pre>
+                        <pre><code class="json">808</code></pre>
                     </div>
                 </div>
             </div>
@@ -4744,15 +5181,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/leaves/deletelist --data '[
-  "1wmz76",
-  "z7g3n4"
+  "akmai7",
+  "21iddp"
 ]'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">956</code></pre>
+                        <pre><code class="json">270</code></pre>
                     </div>
                 </div>
             </div>
@@ -4966,26 +5403,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "sPwd": "9m7kek",
-    "clNo": "7f4qk1",
-    "sName": "halina.streich",
-    "sSex": "2ezx7p",
-    "cards": "0cx94j",
-    "birthday": "2023-06-13",
-    "nation": "b8zjko",
-    "birthplace": "liiodf",
-    "political": "y3a23g",
-    "address": "562 Larkin Flats， Sukmouth， RI 45584",
-    "code": "59915",
-    "sTelephone": "219.714.9767",
-    "sYear": "ie7faj",
-    "dormitory": "fodsee",
-    "city": "by5dkb",
-    "company": "Schiller and Sons",
-    "pay": 76.73,
-    "graduate": "sz6si5",
-    "sRemarks": "djtyki"
+    "id": "20200404430301",
+    "sPwd": "123456",
+    "clNo": "11",
+    "sName": "张三",
+    "sSex": "男",
+    "cards": "452156200001014567",
+    "birthday": "2000-01-01",
+    "nation": "汉族",
+    "birthplace": "广东广州市",
+    "political": "共青团员",
+    "address": "广东省广州市白云区太和镇广州理工学院",
+    "code": "40000101",
+    "sTelephone": "8888888",
+    "sYear": "2020",
+    "dormitory": "A101",
+    "city": "广州",
+    "company": "腾讯公司",
+    "pay": 10000,
+    "graduate": "是",
+    "sRemarks": "l5qmyi"
   }
 ]</code></pre>
                     </div>
@@ -5210,26 +5647,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/id --data '{
-  "id": "56",
-  "sPwd": "7tu5jh",
-  "clNo": "mlnu5e",
-  "sName": "halina.streich",
-  "sSex": "7uhujt",
-  "cards": "ruvos5",
-  "birthday": "2023-06-13",
-  "nation": "9ga0c9",
-  "birthplace": "cwh1w6",
-  "political": "953tnb",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "kvmbdy",
-  "dormitory": "u85azm",
-  "city": "7tun2u",
-  "company": "Schiller and Sons",
-  "pay": 52.18,
-  "graduate": "7nyl0p",
-  "sRemarks": "f76u2l"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "74ypby"
 }'</code></pre>
                     </div>
                 </div>
@@ -5416,26 +5853,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "sPwd": "1joboc",
-    "clNo": "uukdsd",
-    "sName": "halina.streich",
-    "sSex": "nrdhxd",
-    "cards": "yiv1ep",
-    "birthday": "2023-06-13",
-    "nation": "12sszr",
-    "birthplace": "xwoa6n",
-    "political": "ug7pal",
-    "address": "562 Larkin Flats， Sukmouth， RI 45584",
-    "code": "59915",
-    "sTelephone": "219.714.9767",
-    "sYear": "mh2cty",
-    "dormitory": "a9yvpr",
-    "city": "8g9asr",
-    "company": "Schiller and Sons",
-    "pay": 70.36,
-    "graduate": "gwz09x",
-    "sRemarks": "o1nmrx"
+    "id": "20200404430301",
+    "sPwd": "123456",
+    "clNo": "11",
+    "sName": "张三",
+    "sSex": "男",
+    "cards": "452156200001014567",
+    "birthday": "2000-01-01",
+    "nation": "汉族",
+    "birthplace": "广东广州市",
+    "political": "共青团员",
+    "address": "广东省广州市白云区太和镇广州理工学院",
+    "code": "40000101",
+    "sTelephone": "8888888",
+    "sYear": "2020",
+    "dormitory": "A101",
+    "city": "广州",
+    "company": "腾讯公司",
+    "pay": 10000,
+    "graduate": "是",
+    "sRemarks": "15wh4m"
   }
 ]</code></pre>
                     </div>
@@ -5660,26 +6097,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/clNo --data '{
-  "id": "56",
-  "sPwd": "x11ul7",
-  "clNo": "d4otlk",
-  "sName": "halina.streich",
-  "sSex": "nmfn6d",
-  "cards": "eac91n",
-  "birthday": "2023-06-13",
-  "nation": "ypf4ch",
-  "birthplace": "vnwr0n",
-  "political": "czjjsy",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "qppthb",
-  "dormitory": "1mwqq3",
-  "city": "jyuc7r",
-  "company": "Schiller and Sons",
-  "pay": 28.95,
-  "graduate": "6lz1us",
-  "sRemarks": "itrs1g"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "yo19pe"
 }'</code></pre>
                     </div>
                 </div>
@@ -5866,26 +6303,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "sPwd": "26bfzl",
-    "clNo": "lu7ver",
-    "sName": "halina.streich",
-    "sSex": "7uwz4r",
-    "cards": "xfcoeo",
-    "birthday": "2023-06-13",
-    "nation": "v3pbbm",
-    "birthplace": "m1ike2",
-    "political": "l2357e",
-    "address": "562 Larkin Flats， Sukmouth， RI 45584",
-    "code": "59915",
-    "sTelephone": "219.714.9767",
-    "sYear": "kpw01i",
-    "dormitory": "wq50g8",
-    "city": "00zusp",
-    "company": "Schiller and Sons",
-    "pay": 7.40,
-    "graduate": "0f25qm",
-    "sRemarks": "c26ff9"
+    "id": "20200404430301",
+    "sPwd": "123456",
+    "clNo": "11",
+    "sName": "张三",
+    "sSex": "男",
+    "cards": "452156200001014567",
+    "birthday": "2000-01-01",
+    "nation": "汉族",
+    "birthplace": "广东广州市",
+    "political": "共青团员",
+    "address": "广东省广州市白云区太和镇广州理工学院",
+    "code": "40000101",
+    "sTelephone": "8888888",
+    "sYear": "2020",
+    "dormitory": "A101",
+    "city": "广州",
+    "company": "腾讯公司",
+    "pay": 10000,
+    "graduate": "是",
+    "sRemarks": "6dlxy4"
   }
 ]</code></pre>
                     </div>
@@ -6110,26 +6547,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/sname --data '{
-  "id": "56",
-  "sPwd": "44ebrm",
-  "clNo": "x0ztph",
-  "sName": "halina.streich",
-  "sSex": "06t2wq",
-  "cards": "i9s0gp",
-  "birthday": "2023-06-13",
-  "nation": "7venwu",
-  "birthplace": "qmpy1m",
-  "political": "igh7r8",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "i4wdza",
-  "dormitory": "fwqrlh",
-  "city": "juye50",
-  "company": "Schiller and Sons",
-  "pay": 87.81,
-  "graduate": "oyadz8",
-  "sRemarks": "pammtr"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "nund3l"
 }'</code></pre>
                     </div>
                 </div>
@@ -6316,26 +6753,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "sPwd": "4z6e2y",
-    "clNo": "074fkx",
-    "sName": "halina.streich",
-    "sSex": "ebtpjg",
-    "cards": "ikqv87",
-    "birthday": "2023-06-13",
-    "nation": "5vihrj",
-    "birthplace": "5kjwvs",
-    "political": "beo13u",
-    "address": "562 Larkin Flats， Sukmouth， RI 45584",
-    "code": "59915",
-    "sTelephone": "219.714.9767",
-    "sYear": "bw20fl",
-    "dormitory": "4nlo7y",
-    "city": "f7zezk",
-    "company": "Schiller and Sons",
-    "pay": 24.95,
-    "graduate": "e8qaxk",
-    "sRemarks": "5yeb5m"
+    "id": "20200404430301",
+    "sPwd": "123456",
+    "clNo": "11",
+    "sName": "张三",
+    "sSex": "男",
+    "cards": "452156200001014567",
+    "birthday": "2000-01-01",
+    "nation": "汉族",
+    "birthplace": "广东广州市",
+    "political": "共青团员",
+    "address": "广东省广州市白云区太和镇广州理工学院",
+    "code": "40000101",
+    "sTelephone": "8888888",
+    "sYear": "2020",
+    "dormitory": "A101",
+    "city": "广州",
+    "company": "腾讯公司",
+    "pay": 10000,
+    "graduate": "是",
+    "sRemarks": "kc99y2"
   }
 ]</code></pre>
                     </div>
@@ -6560,26 +6997,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/dormitory --data '{
-  "id": "56",
-  "sPwd": "7wnao2",
-  "clNo": "h1jvmh",
-  "sName": "halina.streich",
-  "sSex": "e9htxi",
-  "cards": "q3bhgb",
-  "birthday": "2023-06-13",
-  "nation": "h8ine4",
-  "birthplace": "ts2qzj",
-  "political": "bm3n1h",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "im6l6v",
-  "dormitory": "jgi0fp",
-  "city": "3qjhij",
-  "company": "Schiller and Sons",
-  "pay": 68.01,
-  "graduate": "0aeikx",
-  "sRemarks": "zjerh6"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "ytgx4o"
 }'</code></pre>
                     </div>
                 </div>
@@ -6766,26 +7203,26 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "sPwd": "ze4u4y",
-    "clNo": "mk8cit",
-    "sName": "halina.streich",
-    "sSex": "au60ab",
-    "cards": "honvru",
-    "birthday": "2023-06-13",
-    "nation": "ig26ys",
-    "birthplace": "njfcyj",
-    "political": "l6boys",
-    "address": "562 Larkin Flats， Sukmouth， RI 45584",
-    "code": "59915",
-    "sTelephone": "219.714.9767",
-    "sYear": "1sds18",
-    "dormitory": "ersnfe",
-    "city": "y89hbm",
-    "company": "Schiller and Sons",
-    "pay": 76.05,
-    "graduate": "01kfz9",
-    "sRemarks": "huxhe2"
+    "id": "20200404430301",
+    "sPwd": "123456",
+    "clNo": "11",
+    "sName": "张三",
+    "sSex": "男",
+    "cards": "452156200001014567",
+    "birthday": "2000-01-01",
+    "nation": "汉族",
+    "birthplace": "广东广州市",
+    "political": "共青团员",
+    "address": "广东省广州市白云区太和镇广州理工学院",
+    "code": "40000101",
+    "sTelephone": "8888888",
+    "sYear": "2020",
+    "dormitory": "A101",
+    "city": "广州",
+    "company": "腾讯公司",
+    "pay": 10000,
+    "graduate": "是",
+    "sRemarks": "tjtdyn"
   }
 ]</code></pre>
                     </div>
@@ -7010,33 +7447,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/delete --data '{
-  "id": "56",
-  "sPwd": "3p6bha",
-  "clNo": "45ktqq",
-  "sName": "halina.streich",
-  "sSex": "x17z8x",
-  "cards": "t0r13b",
-  "birthday": "2023-06-13",
-  "nation": "lzswyc",
-  "birthplace": "mvrues",
-  "political": "cnpi34",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "30kzck",
-  "dormitory": "7jcepj",
-  "city": "p12yw9",
-  "company": "Schiller and Sons",
-  "pay": 21.20,
-  "graduate": "55uirj",
-  "sRemarks": "qjkrdn"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "tk2i17"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">173</code></pre>
+                        <pre><code class="json">715</code></pre>
                     </div>
                 </div>
             </div>
@@ -7259,33 +7696,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/add --data '{
-  "id": "56",
-  "sPwd": "ybrdjp",
-  "clNo": "pa4rwi",
-  "sName": "halina.streich",
-  "sSex": "vbhajr",
-  "cards": "xggf66",
-  "birthday": "2023-06-13",
-  "nation": "w2jky3",
-  "birthplace": "1fme09",
-  "political": "d03dz3",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "123gh5",
-  "dormitory": "8khsbe",
-  "city": "f6onxm",
-  "company": "Schiller and Sons",
-  "pay": 50.25,
-  "graduate": "nnx97e",
-  "sRemarks": "zv16k0"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "pe9tdi"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">443</code></pre>
+                        <pre><code class="json">609</code></pre>
                     </div>
                 </div>
             </div>
@@ -7508,33 +7945,33 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/update --data '{
-  "id": "56",
-  "sPwd": "8a1s4w",
-  "clNo": "ak3q7z",
-  "sName": "halina.streich",
-  "sSex": "sxzskj",
-  "cards": "mk2vj3",
-  "birthday": "2023-06-13",
-  "nation": "qlc8w9",
-  "birthplace": "4hezxl",
-  "political": "fg9bft",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "2kg7f8",
-  "dormitory": "fmn63u",
-  "city": "hjkbll",
-  "company": "Schiller and Sons",
-  "pay": 66.44,
-  "graduate": "p9bo9u",
-  "sRemarks": "lfaozo"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "u54fzg"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">724</code></pre>
+                        <pre><code class="json">753</code></pre>
                     </div>
                 </div>
             </div>
@@ -7757,26 +8194,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/login --data '{
-  "id": "56",
-  "sPwd": "4kl4fo",
-  "clNo": "b5lode",
-  "sName": "halina.streich",
-  "sSex": "fkpqr6",
-  "cards": "3rau6g",
-  "birthday": "2023-06-13",
-  "nation": "q8dvpw",
-  "birthplace": "jcaool",
-  "political": "ehm66w",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "1y0s35",
-  "dormitory": "g8gqyi",
-  "city": "px9fgt",
-  "company": "Schiller and Sons",
-  "pay": 64.78,
-  "graduate": "ocvicv",
-  "sRemarks": "zir90j"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "9hkzry"
 }'</code></pre>
                     </div>
                 </div>
@@ -7962,26 +8399,26 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="json">{
-  "id": "56",
-  "sPwd": "l9t4po",
-  "clNo": "in21dg",
-  "sName": "halina.streich",
-  "sSex": "tnn8yl",
-  "cards": "0xfy8j",
-  "birthday": "2023-06-13",
-  "nation": "74bxuj",
-  "birthplace": "riqjho",
-  "political": "e2ir7o",
-  "address": "562 Larkin Flats， Sukmouth， RI 45584",
-  "code": "59915",
-  "sTelephone": "219.714.9767",
-  "sYear": "ledl7a",
-  "dormitory": "0ub00k",
-  "city": "0uqqgg",
-  "company": "Schiller and Sons",
-  "pay": 11.02,
-  "graduate": "q5hjco",
-  "sRemarks": "rn4jxz"
+  "id": "20200404430301",
+  "sPwd": "123456",
+  "clNo": "11",
+  "sName": "张三",
+  "sSex": "男",
+  "cards": "452156200001014567",
+  "birthday": "2000-01-01",
+  "nation": "汉族",
+  "birthplace": "广东广州市",
+  "political": "共青团员",
+  "address": "广东省广州市白云区太和镇广州理工学院",
+  "code": "40000101",
+  "sTelephone": "8888888",
+  "sYear": "2020",
+  "dormitory": "A101",
+  "city": "广州",
+  "company": "腾讯公司",
+  "pay": 10000,
+  "graduate": "是",
+  "sRemarks": "mkehz7"
 }</code></pre>
                     </div>
                 </div>
@@ -8034,15 +8471,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/student/deletelist --data '[
-  "dekwpu",
-  "4t9kdt"
+  "2asj7j",
+  "jo0car"
 ]'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">901</code></pre>
+                        <pre><code class="json">870</code></pre>
                     </div>
                 </div>
             </div>
@@ -8152,13 +8589,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 188,
-    "cNo": "ghyzyt",
-    "tNo": "079bfj",
-    "yearterm": "ohexhx",
-    "cycles": "4ochna",
-    "festival": "ek4kz7",
-    "classroom": "fkyfj7"
+    "id": 1,
+    "cNo": "C001",
+    "tNo": "T001",
+    "yearterm": "2022-2023秋季学期",
+    "cycles": "第1-16周",
+    "festival": "星期二3-4节",
+    "classroom": "11栋502"
   }
 ]</code></pre>
                     </div>
@@ -8266,13 +8703,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/id --data '{
-  "id": 3,
-  "cNo": "4ccfb5",
-  "tNo": "d5xdrf",
-  "yearterm": "w7dqa8",
-  "cycles": "jqoqd0",
-  "festival": "veh9tu",
-  "classroom": "9i3epe"
+  "id": 1,
+  "cNo": "C001",
+  "tNo": "T001",
+  "yearterm": "2022-2023秋季学期",
+  "cycles": "第1-16周",
+  "festival": "星期二3-4节",
+  "classroom": "11栋502"
 }'</code></pre>
                     </div>
                 </div>
@@ -8355,13 +8792,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 352,
-    "cNo": "yzls26",
-    "tNo": "7pvp56",
-    "yearterm": "uobwtl",
-    "cycles": "0ztlb3",
-    "festival": "rkw9h7",
-    "classroom": "2728re"
+    "id": 1,
+    "cNo": "C001",
+    "tNo": "T001",
+    "yearterm": "2022-2023秋季学期",
+    "cycles": "第1-16周",
+    "festival": "星期二3-4节",
+    "classroom": "11栋502"
   }
 ]</code></pre>
                     </div>
@@ -8469,20 +8906,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/delete --data '{
-  "id": 502,
-  "cNo": "ezh6pk",
-  "tNo": "gqsvuu",
-  "yearterm": "3nten3",
-  "cycles": "me6psk",
-  "festival": "ik6lsw",
-  "classroom": "euqhz5"
+  "id": 1,
+  "cNo": "C001",
+  "tNo": "T001",
+  "yearterm": "2022-2023秋季学期",
+  "cycles": "第1-16周",
+  "festival": "星期二3-4节",
+  "classroom": "11栋502"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">641</code></pre>
+                        <pre><code class="json">95</code></pre>
                     </div>
                 </div>
             </div>
@@ -8588,20 +9025,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/add --data '{
-  "id": 817,
-  "cNo": "x1mhzm",
-  "tNo": "cvrnxs",
-  "yearterm": "03lphn",
-  "cycles": "kl791j",
-  "festival": "jgausg",
-  "classroom": "zpcv0u"
+  "id": 1,
+  "cNo": "C001",
+  "tNo": "T001",
+  "yearterm": "2022-2023秋季学期",
+  "cycles": "第1-16周",
+  "festival": "星期二3-4节",
+  "classroom": "11栋502"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">199</code></pre>
+                        <pre><code class="json">751</code></pre>
                     </div>
                 </div>
             </div>
@@ -8707,20 +9144,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teach/update --data '{
-  "id": 712,
-  "cNo": "3sww9g",
-  "tNo": "z4ookf",
-  "yearterm": "pkrclk",
-  "cycles": "am9ytj",
-  "festival": "q3gdwx",
-  "classroom": "03a1g7"
+  "id": 1,
+  "cNo": "C001",
+  "tNo": "T001",
+  "yearterm": "2022-2023秋季学期",
+  "cycles": "第1-16周",
+  "festival": "星期二3-4节",
+  "classroom": "11栋502"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">783</code></pre>
+                        <pre><code class="json">935</code></pre>
                     </div>
                 </div>
             </div>
@@ -8830,13 +9267,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "tPwd": "y437mt",
-    "tName": "halina.streich",
-    "tSex": "y48w54",
-    "email": "franklin.reilly@hotmail.com",
-    "tTelephone": "219.714.9767",
-    "tRemarks": "c20rgq"
+    "id": "T0001",
+    "tPwd": "123456",
+    "tName": "李四",
+    "tSex": "男",
+    "email": "email@qq.com",
+    "tTelephone": "13200000001",
+    "tRemarks": "优秀教师"
   }
 ]</code></pre>
                     </div>
@@ -8944,13 +9381,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/id --data '{
-  "id": "56",
-  "tPwd": "is8rhi",
-  "tName": "halina.streich",
-  "tSex": "05udro",
-  "email": "franklin.reilly@hotmail.com",
-  "tTelephone": "219.714.9767",
-  "tRemarks": "iwomr7"
+  "id": "T0001",
+  "tPwd": "123456",
+  "tName": "李四",
+  "tSex": "男",
+  "email": "email@qq.com",
+  "tTelephone": "13200000001",
+  "tRemarks": "优秀教师"
 }'</code></pre>
                     </div>
                 </div>
@@ -9033,13 +9470,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "tPwd": "hhl330",
-    "tName": "halina.streich",
-    "tSex": "oinraa",
-    "email": "franklin.reilly@hotmail.com",
-    "tTelephone": "219.714.9767",
-    "tRemarks": "zko6ok"
+    "id": "T0001",
+    "tPwd": "123456",
+    "tName": "李四",
+    "tSex": "男",
+    "email": "email@qq.com",
+    "tTelephone": "13200000001",
+    "tRemarks": "优秀教师"
   }
 ]</code></pre>
                     </div>
@@ -9147,20 +9584,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/delete --data '{
-  "id": "56",
-  "tPwd": "7lqim4",
-  "tName": "halina.streich",
-  "tSex": "r898gj",
-  "email": "franklin.reilly@hotmail.com",
-  "tTelephone": "219.714.9767",
-  "tRemarks": "46bi9r"
+  "id": "T0001",
+  "tPwd": "123456",
+  "tName": "李四",
+  "tSex": "男",
+  "email": "email@qq.com",
+  "tTelephone": "13200000001",
+  "tRemarks": "优秀教师"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">151</code></pre>
+                        <pre><code class="json">457</code></pre>
                     </div>
                 </div>
             </div>
@@ -9266,20 +9703,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/add --data '{
-  "id": "56",
-  "tPwd": "266i8a",
-  "tName": "halina.streich",
-  "tSex": "s4k5tm",
-  "email": "franklin.reilly@hotmail.com",
-  "tTelephone": "219.714.9767",
-  "tRemarks": "f6s56l"
+  "id": "T0001",
+  "tPwd": "123456",
+  "tName": "李四",
+  "tSex": "男",
+  "email": "email@qq.com",
+  "tTelephone": "13200000001",
+  "tRemarks": "优秀教师"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">846</code></pre>
+                        <pre><code class="json">722</code></pre>
                     </div>
                 </div>
             </div>
@@ -9385,20 +9822,20 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/update --data '{
-  "id": "56",
-  "tPwd": "ufzn0t",
-  "tName": "halina.streich",
-  "tSex": "ktek6n",
-  "email": "franklin.reilly@hotmail.com",
-  "tTelephone": "219.714.9767",
-  "tRemarks": "vvo2p4"
+  "id": "T0001",
+  "tPwd": "123456",
+  "tName": "李四",
+  "tSex": "男",
+  "email": "email@qq.com",
+  "tTelephone": "13200000001",
+  "tRemarks": "优秀教师"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">757</code></pre>
+                        <pre><code class="json">709</code></pre>
                     </div>
                 </div>
             </div>
@@ -9504,13 +9941,13 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/name --data '{
-  "id": "56",
-  "tPwd": "zs0xir",
-  "tName": "halina.streich",
-  "tSex": "m2u63d",
-  "email": "franklin.reilly@hotmail.com",
-  "tTelephone": "219.714.9767",
-  "tRemarks": "nw0lha"
+  "id": "T0001",
+  "tPwd": "123456",
+  "tName": "李四",
+  "tSex": "男",
+  "email": "email@qq.com",
+  "tTelephone": "13200000001",
+  "tRemarks": "优秀教师"
 }'</code></pre>
                     </div>
                 </div>
@@ -9593,13 +10030,13 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": "56",
-    "tPwd": "6c8n72",
-    "tName": "halina.streich",
-    "tSex": "jho7ue",
-    "email": "franklin.reilly@hotmail.com",
-    "tTelephone": "219.714.9767",
-    "tRemarks": "cxz5cp"
+    "id": "T0001",
+    "tPwd": "123456",
+    "tName": "李四",
+    "tSex": "男",
+    "email": "email@qq.com",
+    "tTelephone": "13200000001",
+    "tRemarks": "优秀教师"
   }
 ]</code></pre>
                     </div>
@@ -9653,15 +10090,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/teacher/deletelist --data '[
-  "iqp7yr",
-  "xcf4x7"
+  "emsrfv",
+  "zamcwi"
 ]'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">806</code></pre>
+                        <pre><code class="json">293</code></pre>
                     </div>
                 </div>
             </div>
@@ -9731,8 +10168,8 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 79,
-    "yearterm": "f7b8se"
+    "id": 1,
+    "yearterm": "2022-2023学年第一学期"
   }
 ]</code></pre>
                     </div>
@@ -9795,8 +10232,8 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/id --data '{
-  "id": 178,
-  "yearterm": "uqr0bp"
+  "id": 1,
+  "yearterm": "2022-2023学年第一学期"
 }'</code></pre>
                     </div>
                 </div>
@@ -9839,8 +10276,8 @@
                     <div class="content">
                         <pre><code class="json">[
   {
-    "id": 926,
-    "yearterm": "19z7b4"
+    "id": 1,
+    "yearterm": "2022-2023学年第一学期"
   }
 ]</code></pre>
                     </div>
@@ -9903,15 +10340,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/delete --data '{
-  "id": 64,
-  "yearterm": "sxd738"
+  "id": 1,
+  "yearterm": "2022-2023学年第一学期"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">290</code></pre>
+                        <pre><code class="json">786</code></pre>
                     </div>
                 </div>
             </div>
@@ -9972,15 +10409,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/add --data '{
-  "id": 172,
-  "yearterm": "17hwrh"
+  "id": 1,
+  "yearterm": "2022-2023学年第一学期"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">811</code></pre>
+                        <pre><code class="json">950</code></pre>
                     </div>
                 </div>
             </div>
@@ -10041,15 +10478,15 @@
                 <div class="listingblock">
                     <div class="content">
                         <pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://localhost:8080/yearterm/update --data '{
-  "id": 849,
-  "yearterm": "49oiin"
+  "id": 1,
+  "yearterm": "2022-2023学年第一学期"
 }'</code></pre>
                     </div>
                 </div>
                 <div class="paragraph"><p><strong>Response-example:</strong></p></div>
                 <div class="listingblock">
                     <div class="content">
-                        <pre><code class="json">495</code></pre>
+                        <pre><code class="json">247</code></pre>
                     </div>
                 </div>
             </div>
@@ -10128,7 +10565,7 @@
             </table>
         </div>
     </div>
-    <footer class="page-footer"><span class="copyright">Generated by smart-doc at 2023-06-13 19:11:19</span><span
+    <footer class="page-footer"><span class="copyright">Generated by smart-doc at 2023-06-14 18:05:29</span><span
             class="footer-modification">Suggestions,contact,support and error reporting on<a
             href="https://gitee.com/smart-doc-team/smart-doc" target="_blank">Gitee</a>or<a
             href="https://github.com/smart-doc-group/smart-doc.git" target="_blank">Github</a></span>
@@ -10137,7 +10574,7 @@
                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABlUlEQVRIS+2UvUvDQBiH398Rly4udnARwUXs4qAIOigI4iL30dTZ2T9AcNPVvUsXF7uYttdScNDFRRAnB11cFFwKxcXBJTQnJ6lEbRI/CIiY9e6e5/e+9+ZAGX/ImE9/QKCU2jfGbGTQqq4xZgtSyisiKmQgIAAVCCFWAGxnIOhqrdd/xyUrpRZsP40xSwA6AI57vd5eq9W6T6s8tQIppSKi+gDQNREprfVNkiRRwDlfY4xZ+FAIuSOi8Qjw0nEc5XnebZwkViClXA2T5+xhY8xus9ncEUJMAziITN5FEARuXLsGCoQQywBs8uEovJ+Scz7FGDuMSM4cx3E9z+u8r+SDQEq5SEQ1IhoZBE+QnBKRq7V+iEreCDjn84wxCx9NgidITnK5nFutVh/7e14FSqnZIAhqAMY+A4+TADjyfb/Ubref7J4XQXhxNvnEV+AJlbTy+XypUqn4KBaLBZuciCa/A0+opN5oNFz7FpUBbP4EHicxxsyAcz7HGDvvz3nar5+2Ho5wOQwsU5+KNGDa+r8grUP0DBLjtRtNKEliAAAAAElFTkSuQmCC"><span
             id="upText">Top</span></div>
 </div>
-<script src="search.js?v=1686654679574"></script>
+<script src="search.js?v=1686737129276"></script>
 <script>
     $(function(){const Accordion=function(el,multiple){this.el=el||{};this.multiple=multiple||false;const links=this.el.find(".dd");links.on("click",{el:this.el,multiple:this.multiple},this.dropdown)};Accordion.prototype.dropdown=function(e){const $el=e.data.el;const $this=$(this),$next=$this.next();$next.slideToggle();$this.parent().toggleClass("open");if(!e.data.multiple){$el.find(".submenu").not($next).slideUp("20").parent().removeClass("open")}};new Accordion($("#accordion"),false);hljs.highlightAll();$(window).scroll(function(){if($(window).scrollTop()>100){$("#toTop").fadeIn(1500);$("#toTop").hover(function(){$("#upArrow").hide();$("#upText").show()},function(){$("#upArrow").show();$("#upText").hide()})}else{$("#toTop").fadeOut(1500)}});$("#toTop").click(function(){$("body, html").animate({scrollTop:0},1000);return false})});
 
